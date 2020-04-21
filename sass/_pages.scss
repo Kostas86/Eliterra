@@ -1,0 +1,47 @@
+$color_1: #ebf3f8;
+$color_text_hed_nav: #122034;
+
+$color_h: #113566;
+$color_text1: rgba(18, 32, 52, 0.6);
+$color_text2: #000000;
+$color_text_cat: #ffffff;
+
+$color_bt: #005ed5;
+$color_bt_hov: #1076f9;
+$color_text_bt: #ffffff;
+
+$color_footer: #0c4187;
+$color_text_footer: #ffffff;
+
+.header_nav {
+    background-color: $color_1;
+    width: 100%;
+    height: 50px;
+}
+
+.nav li {
+    font-size: 16px;
+}
+.nav_link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+.header_contacts{
+    height: 222px;
+}
+
+.footer_container {
+    width: 100%;
+    height: 128px;
+    background-color: $color_footer;
+}
+.footer{
+    margin-left: 96px;
+    color: $color_text_footer;
+    font-size: 16px;
+
+}
