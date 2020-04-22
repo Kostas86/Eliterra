@@ -15,23 +15,79 @@ $color_text_footer: #ffffff;
 
 .header_nav {
     background-color: $color_1;
-    width: 100%;
+}
+.haeder_nav_row {
     height: 50px;
 }
-
 .nav li {
     font-size: 16px;
+    margin-right: 30px;
+    height: 50px;
+    vertical-align: middle;
+    border-bottom: 3px solid transparent;
 }
-.nav_link {
+.nav li a {
+    padding: 0 10px;
+    color: $color_text_hed_nav;
     text-decoration: none;
-
-    &:hover {
-        text-decoration: none;
-        font-weight: bold;
-    }
+    height: 47px;
+    line-height: 47px;
+    vertical-align: middle;
+    display: inline-block;
 }
-.header_contacts{
+.nav li:not(.home_ico) a:hover {
+    color: $color_text_hed_nav;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+.nav li:not(.home_ico) :hover {
+    border-bottom: 3px solid $color_bt;
+}
+.header_conacts_block {
     height: 222px;
+}
+.service_block {
+    background-color: $color_1;
+    .serv_col {
+        padding-left: 390px;
+        padding-right: 40px;
+    }
+    h2 {
+        padding: 51px 0px 28px 0px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 54px;
+        color: $color_h;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color_text1;
+    }
+    .service_link {
+        display: inline-block;
+        width: 164px;
+        height: 45px;
+        border: 1px solid $color_bt;
+        border-radius: 50px;
+        background-color: $color_bt;
+        text-decoration: none;
+        color: $color_text_bt;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 9px 0;
+        &:hover {
+            text-decoration: none;
+            background-color: $color_bt_hov;
+        }
+    }
+    .service_banner {
+        width: 100%;
+    }
 }
 
 .footer_container {
@@ -39,9 +95,8 @@ $color_text_footer: #ffffff;
     height: 128px;
     background-color: $color_footer;
 }
-.footer{
+.footer {
     margin-left: 96px;
     color: $color_text_footer;
     font-size: 16px;
-
 }
