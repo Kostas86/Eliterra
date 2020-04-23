@@ -11,17 +11,20 @@ button, button:active, button:hover, button:visited {
   outline: none;
 }
 
-/* line 16, ../sass/_pages.scss */
+/* line 17, ../sass/_pages.scss */
 .header_nav {
   background-color: #ebf3f8;
 }
 
-/* line 19, ../sass/_pages.scss */
-.haeder_nav_row {
+/* line 20, ../sass/_pages.scss */
+.header_nav_row {
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* line 22, ../sass/_pages.scss */
+/* line 26, ../sass/_pages.scss */
 .nav li {
   font-size: 16px;
   margin-right: 30px;
@@ -30,7 +33,7 @@ button, button:active, button:hover, button:visited {
   border-bottom: 3px solid transparent;
 }
 
-/* line 29, ../sass/_pages.scss */
+/* line 33, ../sass/_pages.scss */
 .nav li a {
   padding: 0 10px;
   color: #122034;
@@ -41,33 +44,98 @@ button, button:active, button:hover, button:visited {
   display: inline-block;
 }
 
-/* line 38, ../sass/_pages.scss */
+/* line 42, ../sass/_pages.scss */
 .nav li:not(.home_ico) a:hover {
   color: #122034;
   text-decoration: none;
   transform: scale(1.1);
 }
 
-/* line 43, ../sass/_pages.scss */
+/* line 47, ../sass/_pages.scss */
 .nav li:not(.home_ico) :hover {
   border-bottom: 3px solid #005ed5;
 }
 
-/* line 46, ../sass/_pages.scss */
-.header_conacts_block {
-  height: 222px;
+/* line 50, ../sass/_pages.scss */
+.account {
+  text-decoration: none;
+}
+/* line 52, ../sass/_pages.scss */
+.account:hover {
+  text-decoration: none;
 }
 
-/* line 49, ../sass/_pages.scss */
+/* line 56, ../sass/_pages.scss */
+.header_conacts_block {
+  min-height: 222px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 62, ../sass/_pages.scss */
+.header_conacts_block p {
+  display: block;
+}
+/* line 65, ../sass/_pages.scss */
+.header_conacts_block a {
+  text-decoration: none;
+}
+/* line 67, ../sass/_pages.scss */
+.header_conacts_block a:hover {
+  text-decoration: none;
+}
+
+/* line 72, ../sass/_pages.scss */
+.header_conacts_wrap {
+  font-size: 16px;
+  color: #000000;
+}
+/* line 75, ../sass/_pages.scss */
+.header_conacts_wrap a {
+  color: #122034;
+  font-size: 18px;
+  text-decoration: none;
+}
+/* line 79, ../sass/_pages.scss */
+.header_conacts_wrap a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 84, ../sass/_pages.scss */
+.header_conacts_wrap .header_phone {
+  padding-right: 20px;
+}
+/* line 87, ../sass/_pages.scss */
+.header_conacts_wrap .header_mail {
+  padding: 0px 15px 0px 40px;
+}
+/* line 90, ../sass/_pages.scss */
+.header_conacts_wrap span {
+  font-weight: bold;
+  font-size: large;
+}
+/* line 94, ../sass/_pages.scss */
+.header_conacts_wrap .header_vertical {
+  font-weight: normal;
+  font-size: 16px;
+  padding: 0px 10px 0px 10px;
+}
+/* line 99, ../sass/_pages.scss */
+.header_conacts_wrap .header_point {
+  padding: 0px 10px 0px 20px;
+}
+
+/* line 105, ../sass/_pages.scss */
 .service_block {
   background-color: #ebf3f8;
 }
-/* line 51, ../sass/_pages.scss */
+/* line 107, ../sass/_pages.scss */
 .service_block .serv_col {
   padding-left: 390px;
   padding-right: 40px;
 }
-/* line 55, ../sass/_pages.scss */
+/* line 111, ../sass/_pages.scss */
 .service_block h2 {
   padding: 51px 0px 28px 0px;
   font-style: normal;
@@ -76,15 +144,16 @@ button, button:active, button:hover, button:visited {
   line-height: 54px;
   color: #113566;
 }
-/* line 63, ../sass/_pages.scss */
+/* line 119, ../sass/_pages.scss */
 .service_block p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: rgba(18, 32, 52, 0.6);
+  padding-bottom: 48px;
 }
-/* line 70, ../sass/_pages.scss */
+/* line 127, ../sass/_pages.scss */
 .service_block .service_link {
   display: inline-block;
   width: 164px;
@@ -99,24 +168,24 @@ button, button:active, button:hover, button:visited {
   text-align: center;
   padding: 9px 0;
 }
-/* line 83, ../sass/_pages.scss */
+/* line 140, ../sass/_pages.scss */
 .service_block .service_link:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
-/* line 88, ../sass/_pages.scss */
+/* line 145, ../sass/_pages.scss */
 .service_block .service_banner {
   width: 100%;
 }
 
-/* line 93, ../sass/_pages.scss */
+/* line 150, ../sass/_pages.scss */
 .footer_container {
   width: 100%;
   height: 128px;
   background-color: #0c4187;
 }
 
-/* line 98, ../sass/_pages.scss */
+/* line 155, ../sass/_pages.scss */
 .footer {
   margin-left: 96px;
   color: #ffffff;
