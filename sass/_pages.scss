@@ -13,7 +13,7 @@ $color_text_bt: #ffffff;
 $color_footer: #0c4187;
 $color_text_footer: #ffffff;
 
-// ===============Навигация===============
+// ===============Навигация (Верхняя часть)===============
 .header_nav {
     background-color: $color_1;
 }
@@ -53,6 +53,7 @@ $color_text_footer: #ffffff;
         text-decoration: none;
     }
 }
+// ===============Навигация (Нижняя часть)===============
 .header_conacts_block {
     min-height: 222px;
     display: flex;
@@ -72,13 +73,16 @@ $color_text_footer: #ffffff;
 .header_conacts_wrap {
     font-size: 16px;
     color: $color_text2;
+    .color_rgba {
+        font-size: 13px;
+        color: $color_text1;
+    }
     a {
         color: #122034;
         font-size: 18px;
         text-decoration: none;
         &:hover {
             text-decoration: none;
-            font-weight: bold;
         }
     }
     .header_phone {
@@ -99,6 +103,68 @@ $color_text_footer: #ffffff;
     .header_point {
         padding: 0px 10px 0px 20px;
     }
+}
+// =======================Слайдер=============
+.slider {
+    min-width: 0;
+    position: relative;
+    .slider_item{
+        text-align: center;
+    }
+    /* Стрелка */
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+        width: 30px;
+        height: 70px;
+        margin: -120px 0 0 0;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+        left: 0;
+        background: url("../img/slider_arrow_left.svg") 0 0 / 100% no-repeat;
+        background: #1076f9;
+        border-radius: 5px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+        right: 0;
+    }
+    /* Точки (булиты) */
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slick-dots li{
+        list-style: none;
+        margin: 28px 15px;
+    }
+    .slick-dots button{
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #000000;
+    }
+    .slick-dots li.slick-active button{
+        background-color: #005DE1;
+        border: 1px solid #005DE1;
+    }
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    /* Для адаптива размера слайдов в JS */
+    align-items: flex-start;
 }
 
 // =======================Сервис=============
