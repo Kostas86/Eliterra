@@ -13,6 +13,18 @@ $color_text_bt: #ffffff;
 $color_footer: #0c4187;
 $color_text_footer: #ffffff;
 
+%link_more {
+    border: 1px solid $color_bt;
+    border-radius: 50px;
+    background-color: $color_bt;
+    text-decoration: none;
+    color: $color_text_bt;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 9px 0;
+}
+
 // ===============Навигация (Верхняя часть)===============
 .header_nav {
     background-color: $color_1;
@@ -108,8 +120,55 @@ $color_text_footer: #ffffff;
 .slider {
     min-width: 0;
     position: relative;
-    .slider_item{
+    margin-bottom: 145px;
+    .slider_item {
+        min-width: 0;
         text-align: center;
+        margin: 0px 60px;
+        &_card {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            &_info {
+                text-align: start;
+                display: block;
+                height: 100%;
+                min-height: 300px;
+                width: 500px;
+                position: absolute;
+                left: 0;
+                top: 0px;
+                background: linear-gradient(90deg, #0C4187 61.67%, rgba(12, 65, 135, 0) 111.84%);
+                padding-left: 93px;
+                padding-right: 139px;
+                color: $color_text_bt;
+                text-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
+                h2 {
+                    font-size: 36px;
+                    line-height: 49px;
+                    padding-top:137px;
+                    margin-bottom: 0;
+                }
+                p {
+                    padding-top:20px;
+                    padding-bottom: 40px; 
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-bottom: 0;
+                }
+                a {
+                    display: inline-block;
+                    width: 164px;
+                    height: 45px;
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $color_bt_hov;
+                    }
+                    @extend %link_more;
+                }
+            }
+        }
     }
     /* Стрелка */
     .slick-arrow {
@@ -117,32 +176,51 @@ $color_text_footer: #ffffff;
         top: 50%;
         z-index: 10;
         font-size: 0;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
         width: 30px;
         height: 70px;
-        margin: -120px 0 0 0;
+        background-position: center;
     }
     /* Стрелка влево */
     .slick-arrow.slick-prev {
         left: 0;
-        background: url("../img/slider_arrow_left.svg") 0 0 / 100% no-repeat;
-        background: #1076f9;
-        border-radius: 5px;
+        background-image: url(../img/left.svg);
+        background-repeat: no-repeat;
+        &:hover {
+            background-image: url(../img/white_left.svg);
+            background-color: #1076f9;
+            background-repeat: no-repeat;
+        }
     }
     /* Стрелка вправо */
     .slick-arrow.slick-next {
         right: 0;
+        background-image: url(../img/right.svg);
+        background-repeat: no-repeat;
+        &:hover {
+            background-image: url(../img/white_right.svg);
+            background-color: #1076f9;
+            background-repeat: no-repeat;
+        }
     }
     /* Точки (булиты) */
     .slick-dots {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translate(-50%, 100% );
+        margin-bottom: 0;
+        padding: 0;
     }
-    .slick-dots li{
+    .slick-dots li {
         list-style: none;
-        margin: 28px 15px;
     }
-    .slick-dots button{
+    .slick-dots button {
         font-size: 0;
         width: 15px;
         height: 15px;
@@ -150,9 +228,9 @@ $color_text_footer: #ffffff;
         background-color: #fff;
         border: 1px solid #000000;
     }
-    .slick-dots li.slick-active button{
-        background-color: #005DE1;
-        border: 1px solid #005DE1;
+    .slick-dots li.slick-active button {
+        background-color: #005de1;
+        border: 1px solid #005de1;
     }
 }
 
@@ -194,19 +272,11 @@ $color_text_footer: #ffffff;
         display: inline-block;
         width: 164px;
         height: 45px;
-        border: 1px solid $color_bt;
-        border-radius: 50px;
-        background-color: $color_bt;
-        text-decoration: none;
-        color: $color_text_bt;
-        font-size: 16px;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 9px 0;
         &:hover {
             text-decoration: none;
             background-color: $color_bt_hov;
         }
+        @extend %link_more;
     }
     .service_banner {
         width: 100%;

@@ -3,7 +3,11 @@ $(document).ready(function () {
         arrows: true,
         dots: true,
         centerMode: true,
-        centerPadding: '460px',
+        centerPadding: '60px',
         slidesToShow: 1,
+        autoplay:true,
+        autoplaySpeed:3000,
+        variableWidth:true,
+
     });
 });
