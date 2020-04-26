@@ -67,7 +67,7 @@ $color_text_footer: #ffffff;
 }
 // ===============Навигация (Нижняя часть)===============
 .header_conacts_block {
-    min-height: 222px;
+    padding: 55px 0 25px 0; 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -85,7 +85,7 @@ $color_text_footer: #ffffff;
 .header_conacts_wrap {
     font-size: 16px;
     color: $color_text2;
-    .color_rgba {
+    .contact_adress {
         font-size: 13px;
         color: $color_text1;
     }
@@ -138,11 +138,18 @@ $color_text_footer: #ffffff;
                 text-align: start;
                 display: block;
                 height: 100%;
-                width: 50%;
+                width: 60%;
                 position: absolute;
                 left: 0;
                 top: 0px;
-                background: linear-gradient(73deg, #0c4187 58%, rgba(12, 65, 135, 0) 70%,rgba(12, 65, 135, 0) 71%,rgba(0,0,0,0) 72%,rgba(0,0,0,0) 72%);
+                background: linear-gradient(
+                    73deg,
+                    #0c4187 51%,
+                    rgba(12, 65, 135, 1) 60%,
+                    rgba(12, 65, 135, 0.2) 80%,
+                    transparent 80.02%,
+                    transparent 100%
+                );
                 padding-left: 93px;
                 padding-right: 139px;
                 color: $color_text_bt;
@@ -173,25 +180,25 @@ $color_text_footer: #ffffff;
                     @extend %link_more;
                 }
             }
-            &_bg{
+            &_bg {
                 height: 100%;
                 position: absolute;
                 right: 0;
                 top: 0;
             }
-            &_effect{
+            &_effect {
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 left: 0;
-                top:0;
+                top: 0;
             }
         }
     }
     /* Стрелка */
     .slick-arrow {
         position: absolute;
-        top: 50%;
+        top:calc(50% - 35px);
         z-index: 10;
         font-size: 0;
         border: none;
@@ -203,7 +210,8 @@ $color_text_footer: #ffffff;
     }
     /* Стрелка влево */
     .slick-arrow.slick-prev {
-        left: 0;
+        left: calc(50% - 15px);
+        transform: translateX(-510px);
         background-image: url(../img/left.svg);
         background-repeat: no-repeat;
         &:hover {
@@ -214,7 +222,8 @@ $color_text_footer: #ffffff;
     }
     /* Стрелка вправо */
     .slick-arrow.slick-next {
-        right: 0;
+        right:  calc(50% - 15px);
+        transform: translateX(510px);
         background-image: url(../img/right.svg);
         background-repeat: no-repeat;
         &:hover {
@@ -230,13 +239,15 @@ $color_text_footer: #ffffff;
         justify-content: center;
         position: absolute;
         left: 50%;
-        bottom: -30px;
+        bottom: 0;
         transform: translate(-50%, 100%);
         margin-bottom: 0;
         padding: 0;
     }
     .slick-dots li {
         list-style: none;
+        line-height: 0;
+        margin: 0px 7px;
     }
     .slick-dots button {
         font-size: 0;
