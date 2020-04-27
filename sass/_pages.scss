@@ -66,56 +66,116 @@ $color_text_footer: #ffffff;
     }
 }
 // ===============Навигация (Нижняя часть)===============
-.header_conacts_block {
-    padding: 55px 0 25px 0; 
+.header_contacts {
+    padding: 55px 0 25px 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    p {
-        display: block;
-    }
-    a {
-        text-decoration: none;
-        &:hover {
-            text-decoration: none;
+    &_wrap {
+        .header_contacts_links {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            &_telgroup {
+                .header_contacts_list {
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    padding-left: 28px;
+                    &:before {
+                        content: "";
+                        background-image: url(../img/header_phone.svg);
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        left: 0;
+                        top: calc(50% - 9px);
+                    }
+                    li {
+                        position: relative;
+                        padding-right: 11px;
+                        margin-left: 10px;
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            right: 0;
+                            top: calc(50% - 8px);
+                            width: 1px;
+                            height: 16px;
+                            background-color: $color_text2;
+                        }
+                    }
+                }
+                a {
+                    display: inline-block;
+                    font-size: 16px;
+                    color: $color_text2;
+                    &:hover {
+                        text-decoration: none;
+                        opacity: 0.6;
+                    }
+                    span {
+                        font-weight: bold;
+                        font-size: large;
+                    }
+                }
+            }
+            &_mailgroup {
+                margin-left: 30px;
+                .header_contacts_mail{
+                    margin-bottom: 0;
+                    padding-left: 35px;
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:before{
+                        content: "";
+                        background-image: url(../img/header_mail.svg);
+                        position: absolute;
+                        width: 20px;
+                        height: 16px;
+                        left: 0;
+                        top: calc(50% - 8px); 
+                    }
+                    a {
+                        font-size: 18px;
+                        color: #122034;
+                        display:block;
+                        &:hover {
+                            text-decoration: none;
+                            opacity: 0.6;
+                        }
+                    }
+                }  
+            }
+        }
+        .header_contacts_adress {
+            font-size: 13px;
+            color: $color_text1;
+            a {
+                color: #122034;
+                font-size: 18px;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
-.header_conacts_wrap {
-    font-size: 16px;
-    color: $color_text2;
-    .contact_adress {
-        font-size: 13px;
-        color: $color_text1;
-    }
-    a {
-        color: #122034;
-        font-size: 18px;
-        text-decoration: none;
-        &:hover {
-            text-decoration: none;
-        }
-    }
-    .header_phone {
-        padding-right: 20px;
-    }
-    .header_mail {
-        padding: 0px 15px 0px 40px;
-    }
-    span {
-        font-weight: bold;
-        font-size: large;
-    }
-    .header_vertical {
-        font-weight: normal;
-        font-size: 16px;
-        padding: 0px 10px 0px 10px;
-    }
-    .header_point {
-        padding: 0px 10px 0px 20px;
-    }
-}
+
 // =======================Слайдер=============
 .slider {
     min-width: 0;
@@ -198,7 +258,7 @@ $color_text_footer: #ffffff;
     /* Стрелка */
     .slick-arrow {
         position: absolute;
-        top:calc(50% - 35px);
+        top: calc(50% - 35px);
         z-index: 10;
         font-size: 0;
         border: none;
@@ -222,7 +282,7 @@ $color_text_footer: #ffffff;
     }
     /* Стрелка вправо */
     .slick-arrow.slick-next {
-        right:  calc(50% - 15px);
+        right: calc(50% - 15px);
         transform: translateX(510px);
         background-image: url(../img/right.svg);
         background-repeat: no-repeat;
