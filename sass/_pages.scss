@@ -79,7 +79,7 @@ $color_text_footer: #ffffff;
             flex-wrap: nowrap;
             justify-content: space-between;
             &_telgroup {
-                .header_contacts_list {
+                .header_contacts_tel-list {
                     position: relative;
                     list-style: none;
                     display: flex;
@@ -132,7 +132,7 @@ $color_text_footer: #ffffff;
             }
             &_mailgroup {
                 margin-left: 30px;
-                .header_contacts_mail{
+                .header_contacts_mail-list{
                     margin-bottom: 0;
                     padding-left: 35px;
                     position: relative;
@@ -164,14 +164,34 @@ $color_text_footer: #ffffff;
         .header_contacts_adress {
             font-size: 13px;
             color: $color_text1;
-            a {
-                color: #122034;
-                font-size: 18px;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .header_contacts_adress-list{
+                position: relative;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                flex-wrap: nowrap;
+                margin-bottom: 0;
+                padding-left: 0px;
+                li{
+                    position: relative;
+                    display: block;
+                    &:before{
+                        content: "";
+                        background-image: url(../img/map_point.svg);
+                        position: absolute;
+                        width: 10px;
+                        height: 14px;
+                        left: 0;
+                        top: calc(50% - 5px); 
+                    }
+                }  
+            } 
         }
     }
 }
@@ -333,6 +353,36 @@ $color_text_footer: #ffffff;
     /* Для адаптива размера слайдов в JS */
     align-items: flex-start;
 }
+// =======================Каталог=============
+.catalog{
+    &_title{
+        display: block;
+        text-align: center;
+    }
+    .catalog_link{
+        text-align: center;
+        display: inline-block;
+            width: 164px;
+            height: 45px;
+            &:hover {
+                text-decoration: none;
+                background-color: $color_bt_hov;
+            }
+        @extend %link_more;
+    }
+    .catalog_menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &_item{
+            width: calc(100% / 3);
+    
+        }
+    }  
+}
+
 
 // =======================Сервис=============
 .service_block {
