@@ -26,29 +26,26 @@ button, button:active, button:hover, button:visited {
 }
 
 /* line 29, ../sass/_pages.scss */
-.header_nav {
+.navigation {
   background-color: #ebf3f8;
 }
-
-/* line 32, ../sass/_pages.scss */
-.header_nav_row {
+/* line 31, ../sass/_pages.scss */
+.navigation_row {
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* line 38, ../sass/_pages.scss */
-.nav li {
+/* line 36, ../sass/_pages.scss */
+.navigation_row .nav li {
   font-size: 16px;
   margin-right: 30px;
   height: 50px;
   vertical-align: middle;
   border-bottom: 3px solid transparent;
 }
-
-/* line 45, ../sass/_pages.scss */
-.nav li a {
+/* line 43, ../sass/_pages.scss */
+.navigation_row .nav li a {
   padding: 0 10px;
   color: #122034;
   text-decoration: none;
@@ -57,29 +54,26 @@ button, button:active, button:hover, button:visited {
   vertical-align: middle;
   display: inline-block;
 }
-
-/* line 54, ../sass/_pages.scss */
-.nav li:not(.home_ico) a:hover {
+/* line 52, ../sass/_pages.scss */
+.navigation_row .nav li:not(.home_ico) a:hover {
   color: #122034;
   text-decoration: none;
   transform: scale(1.1);
 }
-
-/* line 59, ../sass/_pages.scss */
-.nav li:not(.home_ico) :hover {
+/* line 57, ../sass/_pages.scss */
+.navigation_row .nav li:not(.home_ico) :hover {
   border-bottom: 3px solid #005ed5;
 }
-
+/* line 60, ../sass/_pages.scss */
+.navigation_row .account {
+  text-decoration: none;
+}
 /* line 62, ../sass/_pages.scss */
-.account {
-  text-decoration: none;
-}
-/* line 64, ../sass/_pages.scss */
-.account:hover {
+.navigation_row .account:hover {
   text-decoration: none;
 }
 
-/* line 69, ../sass/_pages.scss */
+/* line 70, ../sass/_pages.scss */
 .header_contacts {
   padding: 55px 0 25px 0;
   display: flex;
@@ -87,15 +81,15 @@ button, button:active, button:hover, button:visited {
   justify-content: space-between;
   align-items: center;
 }
-/* line 76, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links {
+/* line 77, ../sass/_pages.scss */
+.header_contacts_item_links {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-/* line 82, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup .header_contacts_tel-list {
+/* line 83, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup .header_contacts_tel-list {
   position: relative;
   list-style: none;
   display: flex;
@@ -103,8 +97,8 @@ button, button:active, button:hover, button:visited {
   flex-wrap: nowrap;
   padding-left: 28px;
 }
-/* line 89, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup .header_contacts_tel-list:before {
+/* line 90, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup .header_contacts_tel-list:before {
   content: "";
   background-image: url(../img/header_phone.svg);
   position: absolute;
@@ -113,18 +107,18 @@ button, button:active, button:hover, button:visited {
   left: 0;
   top: calc(50% - 9px);
 }
-/* line 98, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup .header_contacts_tel-list li {
+/* line 99, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup .header_contacts_tel-list li {
   position: relative;
   padding-right: 11px;
   margin-left: 10px;
 }
-/* line 103, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup .header_contacts_tel-list li:last-child::after {
+/* line 104, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup .header_contacts_tel-list li:last-child::after {
   display: none;
 }
-/* line 107, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup .header_contacts_tel-list li:after {
+/* line 108, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup .header_contacts_tel-list li:after {
   content: "";
   position: absolute;
   display: block;
@@ -134,28 +128,28 @@ button, button:active, button:hover, button:visited {
   height: 16px;
   background-color: #000000;
 }
-/* line 119, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup a {
+/* line 120, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup a {
   display: inline-block;
   font-size: 16px;
   color: #000000;
 }
-/* line 123, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup a:hover {
+/* line 124, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup a:hover {
   text-decoration: none;
   opacity: 0.6;
 }
-/* line 127, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_telgroup a span {
+/* line 128, ../sass/_pages.scss */
+.header_contacts_item_links_telgroup a span {
   font-weight: bold;
   font-size: large;
 }
-/* line 133, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_mailgroup {
+/* line 134, ../sass/_pages.scss */
+.header_contacts_item_links_mailgroup {
   margin-left: 30px;
 }
-/* line 135, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_mailgroup .header_contacts_mail-list {
+/* line 136, ../sass/_pages.scss */
+.header_contacts_item_links_mailgroup .header_contacts_mail-list {
   margin-bottom: 0;
   padding-left: 35px;
   position: relative;
@@ -164,8 +158,8 @@ button, button:active, button:hover, button:visited {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-/* line 143, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_mailgroup .header_contacts_mail-list:before {
+/* line 144, ../sass/_pages.scss */
+.header_contacts_item_links_mailgroup .header_contacts_mail-list:before {
   content: "";
   background-image: url(../img/header_mail.svg);
   position: absolute;
@@ -174,28 +168,27 @@ button, button:active, button:hover, button:visited {
   left: 0;
   top: calc(50% - 8px);
 }
-/* line 152, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_mailgroup .header_contacts_mail-list a {
+/* line 153, ../sass/_pages.scss */
+.header_contacts_item_links_mailgroup .header_contacts_mail-list a {
   font-size: 18px;
   color: #122034;
   display: block;
 }
-/* line 156, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_links_mailgroup .header_contacts_mail-list a:hover {
+/* line 157, ../sass/_pages.scss */
+.header_contacts_item_links_mailgroup .header_contacts_mail-list a:hover {
   text-decoration: none;
   opacity: 0.6;
 }
-/* line 164, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_adress {
+/* line 165, ../sass/_pages.scss */
+.header_contacts_item_adress {
   font-size: 13px;
   color: rgba(18, 32, 52, 0.6);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
 }
 /* line 172, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_adress .header_contacts_adress-list {
+.header_contacts_item_adress-list {
   position: relative;
   list-style: none;
   display: flex;
@@ -206,12 +199,14 @@ button, button:active, button:hover, button:visited {
   padding-left: 0px;
 }
 /* line 181, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_adress .header_contacts_adress-list li {
+.header_contacts_item_adress-list li {
+  margin-left: 20px;
+  padding-left: 24px;
   position: relative;
   display: block;
 }
-/* line 184, ../sass/_pages.scss */
-.header_contacts_wrap .header_contacts_adress .header_contacts_adress-list li:before {
+/* line 186, ../sass/_pages.scss */
+.header_contacts_item_adress-list li:before {
   content: "";
   background-image: url(../img/map_point.svg);
   position: absolute;
@@ -221,7 +216,7 @@ button, button:active, button:hover, button:visited {
   top: calc(50% - 5px);
 }
 
-/* line 200, ../sass/_pages.scss */
+/* line 202, ../sass/_pages.scss */
 .slider {
   min-width: 0;
   position: relative;
@@ -233,13 +228,13 @@ button, button:active, button:hover, button:visited {
   /* ╨б╤В╤А╨╡╨╗╨║╨░ ╨▓╨┐╤А╨░╨▓╨╛ */
   /* ╨в╨╛╤З╨║╨╕ (╨▒╤Г╨╗╨╕╤В╤Л) */
 }
-/* line 206, ../sass/_pages.scss */
+/* line 208, ../sass/_pages.scss */
 .slider .slider_item {
   min-width: 0;
   text-align: center;
   margin: 30px 25px;
 }
-/* line 210, ../sass/_pages.scss */
+/* line 212, ../sass/_pages.scss */
 .slider .slider_item_card {
   width: 1110px;
   height: 450px;
@@ -248,7 +243,7 @@ button, button:active, button:hover, button:visited {
   box-shadow: 0px 0px 20px rgba(18, 32, 52, 0.6);
   overflow: hidden;
 }
-/* line 217, ../sass/_pages.scss */
+/* line 219, ../sass/_pages.scss */
 .slider .slider_item_card_info {
   text-align: start;
   display: block;
@@ -263,14 +258,14 @@ button, button:active, button:hover, button:visited {
   color: #ffffff;
   text-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
 }
-/* line 237, ../sass/_pages.scss */
+/* line 239, ../sass/_pages.scss */
 .slider .slider_item_card_info h2 {
   font-size: 36px;
   line-height: 49px;
   padding-top: 137px;
   margin-bottom: 0;
 }
-/* line 243, ../sass/_pages.scss */
+/* line 245, ../sass/_pages.scss */
 .slider .slider_item_card_info p {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -278,7 +273,7 @@ button, button:active, button:hover, button:visited {
   line-height: 30px;
   margin-bottom: 0;
 }
-/* line 250, ../sass/_pages.scss */
+/* line 252, ../sass/_pages.scss */
 .slider .slider_item_card_info a {
   position: relative;
   z-index: 1;
@@ -286,19 +281,19 @@ button, button:active, button:hover, button:visited {
   width: 164px;
   height: 45px;
 }
-/* line 256, ../sass/_pages.scss */
+/* line 258, ../sass/_pages.scss */
 .slider .slider_item_card_info a:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
-/* line 263, ../sass/_pages.scss */
+/* line 265, ../sass/_pages.scss */
 .slider .slider_item_card_bg {
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 269, ../sass/_pages.scss */
+/* line 271, ../sass/_pages.scss */
 .slider .slider_item_card_effect {
   width: 100%;
   height: 100%;
@@ -306,7 +301,7 @@ button, button:active, button:hover, button:visited {
   left: 0;
   top: 0;
 }
-/* line 279, ../sass/_pages.scss */
+/* line 281, ../sass/_pages.scss */
 .slider .slick-arrow {
   position: absolute;
   top: calc(50% - 35px);
@@ -319,33 +314,33 @@ button, button:active, button:hover, button:visited {
   height: 70px;
   background-position: center;
 }
-/* line 292, ../sass/_pages.scss */
+/* line 294, ../sass/_pages.scss */
 .slider .slick-arrow.slick-prev {
   left: calc(50% - 15px);
   transform: translateX(-510px);
   background-image: url(../img/left.svg);
   background-repeat: no-repeat;
 }
-/* line 297, ../sass/_pages.scss */
+/* line 299, ../sass/_pages.scss */
 .slider .slick-arrow.slick-prev:hover {
   background-image: url(../img/white_left.svg);
   background-color: #1076f9;
   background-repeat: no-repeat;
 }
-/* line 304, ../sass/_pages.scss */
+/* line 306, ../sass/_pages.scss */
 .slider .slick-arrow.slick-next {
   right: calc(50% - 15px);
   transform: translateX(510px);
   background-image: url(../img/right.svg);
   background-repeat: no-repeat;
 }
-/* line 309, ../sass/_pages.scss */
+/* line 311, ../sass/_pages.scss */
 .slider .slick-arrow.slick-next:hover {
   background-image: url(../img/white_right.svg);
   background-color: #1076f9;
   background-repeat: no-repeat;
 }
-/* line 316, ../sass/_pages.scss */
+/* line 318, ../sass/_pages.scss */
 .slider .slick-dots {
   display: flex;
   align-items: center;
@@ -357,13 +352,13 @@ button, button:active, button:hover, button:visited {
   margin-bottom: 0;
   padding: 0;
 }
-/* line 327, ../sass/_pages.scss */
+/* line 329, ../sass/_pages.scss */
 .slider .slick-dots li {
   list-style: none;
   line-height: 0;
   margin: 0px 7px;
 }
-/* line 332, ../sass/_pages.scss */
+/* line 334, ../sass/_pages.scss */
 .slider .slick-dots button {
   font-size: 0;
   width: 15px;
@@ -372,82 +367,115 @@ button, button:active, button:hover, button:visited {
   background-color: #fff;
   border: 1px solid #000000;
 }
-/* line 340, ../sass/_pages.scss */
+/* line 342, ../sass/_pages.scss */
 .slider .slick-dots li.slick-active button {
   background-color: #005de1;
   border: 1px solid #005de1;
 }
 
 /* ╨Ю╨│╤А╨░╨╜╨╕╤З╨╕╨▓╨░╤О╤Й╨░╤П ╨╛╨▒╨╛╨╗╨╛╤З╨║╨░ */
-/* line 347, ../sass/_pages.scss */
+/* line 349, ../sass/_pages.scss */
 .slick-list {
   overflow: hidden;
 }
 
 /* ╨Ы╨╡╨╜╤В╨░ ╤Б╨╗╨░╨╣╨┤╨╛╨▓ */
-/* line 351, ../sass/_pages.scss */
+/* line 353, ../sass/_pages.scss */
 .slick-track {
   display: flex;
   /* ╨Ф╨╗╤П ╨░╨┤╨░╨┐╤В╨╕╨▓╨░ ╤А╨░╨╖╨╝╨╡╤А╨░ ╤Б╨╗╨░╨╣╨┤╨╛╨▓ ╨▓ JS */
   align-items: flex-start;
 }
 
-/* line 358, ../sass/_pages.scss */
+/* line 359, ../sass/_pages.scss */
+.catalog {
+  margin-bottom: 132px;
+}
+/* line 361, ../sass/_pages.scss */
 .catalog_title {
   display: block;
   text-align: center;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #113566;
 }
-/* line 362, ../sass/_pages.scss */
+/* line 368, ../sass/_pages.scss */
 .catalog .catalog_link {
   margin: 0 auto;
   display: block;
-  width: 164px;
+  box-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
+  width: 210px;
   height: 45px;
 }
-/* line 367, ../sass/_pages.scss */
+/* line 374, ../sass/_pages.scss */
 .catalog .catalog_link:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
-/* line 373, ../sass/_pages.scss */
+/* line 380, ../sass/_pages.scss */
 .catalog .catalog_menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
-/* line 379, ../sass/_pages.scss */
-.catalog .catalog_menu_item {
+/* line 388, ../sass/_pages.scss */
+.catalog .catalog_menu .catalog_menu_item_info {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 392, ../sass/_pages.scss */
+.catalog .catalog_menu .catalog_menu_item_info h2 {
+  font-size: 40px;
+}
+/* line 395, ../sass/_pages.scss */
+.catalog .catalog_menu .catalog_menu_item_info p {
+  font-size: 20px;
+}
+/* line 399, ../sass/_pages.scss */
+.catalog .catalog_menu_item_01 {
   width: calc(100% / 3);
+  height: 246px;
+  background-image: url(../img/catalog_img/catalog_01.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 }
 
-/* line 387, ../sass/_pages.scss */
+/* line 413, ../sass/_pages.scss */
 .service {
   background-color: #ebf3f8;
 }
-/* line 389, ../sass/_pages.scss */
+/* line 415, ../sass/_pages.scss */
 .service_block {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-/* line 394, ../sass/_pages.scss */
+/* line 420, ../sass/_pages.scss */
 .service_block_item {
   width: calc(100% / 2);
   padding-left: 390px;
   padding-right: 40px;
 }
-/* line 398, ../sass/_pages.scss */
+/* line 424, ../sass/_pages.scss */
 .service_block_item:last-child {
   padding: 0;
 }
-/* line 401, ../sass/_pages.scss */
+/* line 427, ../sass/_pages.scss */
 .service_block_item .service_banner {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
 }
-/* line 404, ../sass/_pages.scss */
+/* line 432, ../sass/_pages.scss */
 .service_block_item h2 {
   padding: 51px 0px 28px 0px;
   font-style: normal;
@@ -456,7 +484,7 @@ button, button:active, button:hover, button:visited {
   line-height: 54px;
   color: #113566;
 }
-/* line 412, ../sass/_pages.scss */
+/* line 440, ../sass/_pages.scss */
 .service_block_item p {
   font-style: normal;
   font-weight: normal;
@@ -465,19 +493,31 @@ button, button:active, button:hover, button:visited {
   color: rgba(18, 32, 52, 0.6);
   padding-bottom: 48px;
 }
-/* line 420, ../sass/_pages.scss */
+/* line 448, ../sass/_pages.scss */
 .service_block_item .service_link {
   display: inline-block;
   width: 164px;
   height: 45px;
 }
-/* line 424, ../sass/_pages.scss */
+/* line 452, ../sass/_pages.scss */
 .service_block_item .service_link:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
 
-/* line 434, ../sass/_pages.scss */
+/* line 462, ../sass/_pages.scss */
+.about {
+  width: 100%;
+  background-image: url(../img/About_img.jpg);
+  background-repeat: no-repeat;
+}
+/* line 467, ../sass/_pages.scss */
+.about_block_item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* line 476, ../sass/_pages.scss */
 .footer_wrap {
   width: 100%;
   height: 128px;
@@ -486,7 +526,7 @@ button, button:active, button:hover, button:visited {
   justify-content: center;
   align-items: center;
 }
-/* line 441, ../sass/_pages.scss */
+/* line 483, ../sass/_pages.scss */
 .footer_wrap .footer_block {
   display: flex;
   flex-direction: row;
@@ -494,7 +534,7 @@ button, button:active, button:hover, button:visited {
   justify-content: flex-start;
   align-items: center;
 }
-/* line 448, ../sass/_pages.scss */
+/* line 490, ../sass/_pages.scss */
 .footer_wrap .footer_block_item span {
   padding-left: 96px;
   color: #ffffff;
