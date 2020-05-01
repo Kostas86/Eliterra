@@ -200,16 +200,15 @@ $color_text_footer: #ffffff;
         position: relative;
         padding-left: 30px;
         align-self: flex-end;
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             display: block;
             left: 0;
-            bottom:0;
+            bottom: 0;
             width: 1px;
             height: 40px;
             background-color: rgba(18, 32, 52, 0.3);
-
         }
         &_companents {
             display: block;
@@ -254,67 +253,66 @@ $color_text_footer: #ffffff;
         min-width: 0;
         text-align: center;
         margin: 30px 25px;
-        &.slick-active{
-            .slider_item_card_effect{
-                .cross{
-                    &_1{
+        &.slick-active {
+            .slider_item_card_effect {
+                .cross {
+                    &_1 {
                         transform: rotate(-77deg);
                         width: 15px;
                         height: 15px;
-                        left: 41px;
-                        bottom: 58px;
+                        left: 4%;
+                        bottom: 13%;
                     }
-                    &_2{
+                    &_2 {
                         transform: rotate(-70deg);
                         width: 18px;
                         height: 18px;
-                        left: 62px;
-                        top: 47px;
+                        left: 6%;
+                        top: 12%;
                     }
-                    &_3{
+                    &_3 {
                         transform: rotate(-105deg);
                         width: 30px;
                         height: 30px;
-                        left: 315px;
+                        left: 28%;
                         bottom: 0px;
                     }
-                    &_4{
+                    &_4 {
                         transform: rotate(-38deg);
                         width: 32px;
                         height: 32px;
-                        left: 421px;
-                        top: 208px;
+                        left: 38%;
+                        top: 48%;
                     }
-                    &_5{
+                    &_5 {
                         transform: rotate(0deg);
                         width: 30px;
                         height: 30px;
-                        right: 333px;
-                        bottom: 61px;
+                        right: 30%;
+                        bottom: 13.5%;
                     }
-                    &_6{
+                    &_6 {
                         transform: rotate(-38deg);
                         width: 20px;
                         height: 20px;
-                        right: 16px;
-                        bottom: 110px;
+                        right: 1.5%;
+                        bottom: 25%;
                     }
-                    
                 }
-                .ring{
-                    &_1{
+                .ring {
+                    &_1 {
                         top: 253px;
                         right: 233px;
                         width: 239px;
                         height: 239px;
                     }
-                    &_2{
+                    &_2 {
                         top: 185px;
                         right: 165px;
                         width: 375px;
                         height: 375px;
                     }
-                    &_3{
+                    &_3 {
                         top: 119px;
                         right: 99px;
                         width: 507px;
@@ -347,7 +345,7 @@ $color_text_footer: #ffffff;
                     transparent 100%
                 );
                 padding-left: 93px;
-                padding-right: 139px;
+                padding-right: 270px;
                 color: $color_text_bt;
                 text-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
                 h2 {
@@ -389,75 +387,78 @@ $color_text_footer: #ffffff;
                 left: 0;
                 top: 0;
                 overflow: hidden;
-                .cross{
-                    &_1{
+                .cross {
+                    &_1 {
                         transform: rotate(0deg);
                         width: 15px;
                         height: 15px;
                         left: -15px;
                         bottom: -15px;
                     }
-                    &_2{
+                    &_2 {
                         transform: rotate(0deg);
                         width: 18px;
                         height: 18px;
                         left: -18px;
                         top: -18px;
                     }
-                    &_3{
-                        transform: rotate(0deg);                        width: 30px;
+                    &_3 {
+                        transform: rotate(0deg);
+                        width: 30px;
                         height: 30px;
                         left: 50%;
                         bottom: -30px;
                     }
-                    &_4{
-                        transform: rotate(0deg);                        width: 32px;
+                    &_4 {
+                        transform: rotate(0deg);
+                        width: 32px;
                         height: 32px;
                         left: 50%;
                         top: -32px;
                     }
-                    &_5{
-                        transform: rotate(0deg);                        width: 30px;
+                    &_5 {
+                        transform: rotate(0deg);
+                        width: 30px;
                         height: 30px;
                         right: -30px;
                         bottom: -30px;
                     }
-                    &_6{
-                        transform: rotate(0deg);                        width: 20px;
+                    &_6 {
+                        transform: rotate(0deg);
+                        width: 20px;
                         height: 20px;
                         right: -20px;
                         bottom: -20px;
                     }
-                    
                 }
-                .ring{
-                    &_1{
+                .ring {
+                    &_1 {
                         top: 100%;
                         right: 233px;
                         width: 239px;
                         height: 239px;
                     }
-                    &_2{
+                    &_2 {
                         top: 100%;
                         right: 165px;
                         width: 375px;
                         height: 375px;
                     }
-                    &_3{
+                    &_3 {
                         top: 100%;
                         right: 99px;
                         width: 507px;
                         height: 507px;
                     }
                 }
-                &_cross{
-                    background:url(../img/cross_effect.svg) no-repeat center;
+                &_cross {
+                    background: url(../img/cross_effect.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
                     transition: all linear 0.9s;
                 }
-                &_ring{
-                    background:url(../img/circle_effect.svg) no-repeat center;
+                &_ring {
+                    background: url(../img/circle_effect.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
                     transition: all linear 0.9s;
@@ -569,30 +570,71 @@ $color_text_footer: #ffffff;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         margin-top: 30px;
         margin-bottom: 25px;
-        .catalog_menu_item_info {
-            font-weight: bold;
-            text-decoration: none;
-            color: $color_text_bt;
-            h2 {
-                font-size: 40px;
-            }
-            p {
-                font-size: 20px;
-            }
-        }
-        &_item_01 {
-            width: calc(100% / 3);
+        &_item {
+            position: relative;
+            width: 350px;
             height: 246px;
-            background-image: url(../img/catalog_img/catalog_01.jpg);
-            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: flex-end;
+            border-radius: 10px;
+            text-decoration: none;
+            &:hover{
+                background: rgba(13, 66, 136, 0.9);
+            }
+
+            &_info {
+                text-align: start;
+                left: 0;
+                top: 0;
+                font-weight: bold;
+                color: $color_text_bt;
+                padding: 0 0 40px 51px;
+                h2 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            &_effect{
+                position: absolute;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                
+            }
+        }
+        .bg_01 {
+            background: url(../img/catalog_img/catalog_01.jpg) no-repeat center;
+            background-size: contain;
+            
+            &:hover{
+                background: rgba(13, 66, 136, 0.9);
+            }
+        }
+        .bg_02 {
+            background: url(../img/catalog_img/catalog_02.jpg) no-repeat center;
+            background-size: contain;
+        }
+        .bg_03 {
+            background: url(../img/catalog_img/catalog_03.jpg) no-repeat center;
+            background-size: contain;
+        }
+        .bg_04 {
+            background: url(../img/catalog_img/catalog_04.jpg) no-repeat center;
+            background-size: contain;
+        }
+        .bg_05 {
+            background: url(../img/catalog_img/catalog_05.jpg) no-repeat center;
+            background-size: contain;
+        }
+        .bg_06 {
+            background: url(../img/catalog_img/catalog_06.jpg) no-repeat center;
+            background-size: contain;
         }
     }
 }

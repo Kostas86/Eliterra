@@ -232,24 +232,24 @@ button, button:active, button:hover, button:visited {
   height: 40px;
   background-color: rgba(18, 32, 52, 0.3);
 }
-/* line 214, ../sass/_pages.scss */
+/* line 213, ../sass/_pages.scss */
 .header_contacts_basket_companents {
   display: block;
   text-decoration: none;
 }
-/* line 217, ../sass/_pages.scss */
+/* line 216, ../sass/_pages.scss */
 .header_contacts_basket_companents:hover {
   text-decoration: none;
 }
-/* line 219, ../sass/_pages.scss */
+/* line 218, ../sass/_pages.scss */
 .header_contacts_basket_companents:hover .counter {
   background-color: #cf3a3a;
 }
-/* line 222, ../sass/_pages.scss */
+/* line 221, ../sass/_pages.scss */
 .header_contacts_basket_companents:hover .ico {
   opacity: 0.6;
 }
-/* line 226, ../sass/_pages.scss */
+/* line 225, ../sass/_pages.scss */
 .header_contacts_basket_companents .counter {
   width: 26px;
   height: 24px;
@@ -262,13 +262,13 @@ button, button:active, button:hover, button:visited {
   font-size: 16px;
   font-weight: 600;
 }
-/* line 238, ../sass/_pages.scss */
+/* line 237, ../sass/_pages.scss */
 .header_contacts_basket_companents .ico {
   width: 25px;
   height: 25px;
 }
 
-/* line 247, ../sass/_pages.scss */
+/* line 246, ../sass/_pages.scss */
 .slider {
   min-width: 0;
   position: relative;
@@ -280,82 +280,82 @@ button, button:active, button:hover, button:visited {
   /* ╨б╤В╤А╨╡╨╗╨║╨░ ╨▓╨┐╤А╨░╨▓╨╛ */
   /* ╨в╨╛╤З╨║╨╕ (╨▒╤Г╨╗╨╕╤В╤Л) */
 }
-/* line 253, ../sass/_pages.scss */
+/* line 252, ../sass/_pages.scss */
 .slider .slider_item {
   min-width: 0;
   text-align: center;
   margin: 30px 25px;
 }
-/* line 260, ../sass/_pages.scss */
+/* line 259, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .cross_1 {
   transform: rotate(-77deg);
   width: 15px;
   height: 15px;
-  left: 41px;
-  bottom: 58px;
+  left: 4%;
+  bottom: 13%;
 }
-/* line 267, ../sass/_pages.scss */
+/* line 266, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .cross_2 {
   transform: rotate(-70deg);
   width: 18px;
   height: 18px;
-  left: 62px;
-  top: 47px;
+  left: 6%;
+  top: 12%;
 }
-/* line 274, ../sass/_pages.scss */
+/* line 273, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .cross_3 {
   transform: rotate(-105deg);
   width: 30px;
   height: 30px;
-  left: 315px;
+  left: 28%;
   bottom: 0px;
 }
-/* line 281, ../sass/_pages.scss */
+/* line 280, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .cross_4 {
   transform: rotate(-38deg);
   width: 32px;
   height: 32px;
-  left: 421px;
-  top: 208px;
+  left: 38%;
+  top: 48%;
 }
-/* line 288, ../sass/_pages.scss */
+/* line 287, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .cross_5 {
   transform: rotate(0deg);
   width: 30px;
   height: 30px;
-  right: 333px;
-  bottom: 61px;
+  right: 30%;
+  bottom: 13.5%;
 }
-/* line 295, ../sass/_pages.scss */
+/* line 294, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .cross_6 {
   transform: rotate(-38deg);
   width: 20px;
   height: 20px;
-  right: 16px;
-  bottom: 110px;
+  right: 1.5%;
+  bottom: 25%;
 }
-/* line 305, ../sass/_pages.scss */
+/* line 303, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .ring_1 {
   top: 253px;
   right: 233px;
   width: 239px;
   height: 239px;
 }
-/* line 311, ../sass/_pages.scss */
+/* line 309, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .ring_2 {
   top: 185px;
   right: 165px;
   width: 375px;
   height: 375px;
 }
-/* line 317, ../sass/_pages.scss */
+/* line 315, ../sass/_pages.scss */
 .slider .slider_item.slick-active .slider_item_card_effect .ring_3 {
   top: 119px;
   right: 99px;
   width: 507px;
   height: 507px;
 }
-/* line 326, ../sass/_pages.scss */
+/* line 324, ../sass/_pages.scss */
 .slider .slider_item_card {
   width: 1110px;
   height: 450px;
@@ -364,7 +364,7 @@ button, button:active, button:hover, button:visited {
   box-shadow: 0px 0px 20px rgba(18, 32, 52, 0.6);
   overflow: hidden;
 }
-/* line 333, ../sass/_pages.scss */
+/* line 331, ../sass/_pages.scss */
 .slider .slider_item_card_info {
   text-align: start;
   display: block;
@@ -375,18 +375,18 @@ button, button:active, button:hover, button:visited {
   top: 0px;
   background: linear-gradient(73deg, #0c4187 51%, #0c4187 60%, rgba(12, 65, 135, 0.2) 80%, transparent 80.02%, transparent 100%);
   padding-left: 93px;
-  padding-right: 139px;
+  padding-right: 270px;
   color: #ffffff;
   text-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
 }
-/* line 353, ../sass/_pages.scss */
+/* line 351, ../sass/_pages.scss */
 .slider .slider_item_card_info h2 {
   font-size: 36px;
   line-height: 49px;
   padding-top: 137px;
   margin-bottom: 0;
 }
-/* line 359, ../sass/_pages.scss */
+/* line 357, ../sass/_pages.scss */
 .slider .slider_item_card_info p {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -394,7 +394,7 @@ button, button:active, button:hover, button:visited {
   line-height: 30px;
   margin-bottom: 0;
 }
-/* line 366, ../sass/_pages.scss */
+/* line 364, ../sass/_pages.scss */
 .slider .slider_item_card_info a {
   position: relative;
   z-index: 1;
@@ -402,19 +402,19 @@ button, button:active, button:hover, button:visited {
   width: 164px;
   height: 45px;
 }
-/* line 372, ../sass/_pages.scss */
+/* line 370, ../sass/_pages.scss */
 .slider .slider_item_card_info a:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
-/* line 379, ../sass/_pages.scss */
+/* line 377, ../sass/_pages.scss */
 .slider .slider_item_card_bg {
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 385, ../sass/_pages.scss */
+/* line 383, ../sass/_pages.scss */
 .slider .slider_item_card_effect {
   width: 100%;
   height: 100%;
@@ -423,7 +423,7 @@ button, button:active, button:hover, button:visited {
   top: 0;
   overflow: hidden;
 }
-/* line 393, ../sass/_pages.scss */
+/* line 391, ../sass/_pages.scss */
 .slider .slider_item_card_effect .cross_1 {
   transform: rotate(0deg);
   width: 15px;
@@ -431,7 +431,7 @@ button, button:active, button:hover, button:visited {
   left: -15px;
   bottom: -15px;
 }
-/* line 400, ../sass/_pages.scss */
+/* line 398, ../sass/_pages.scss */
 .slider .slider_item_card_effect .cross_2 {
   transform: rotate(0deg);
   width: 18px;
@@ -439,7 +439,7 @@ button, button:active, button:hover, button:visited {
   left: -18px;
   top: -18px;
 }
-/* line 407, ../sass/_pages.scss */
+/* line 405, ../sass/_pages.scss */
 .slider .slider_item_card_effect .cross_3 {
   transform: rotate(0deg);
   width: 30px;
@@ -447,7 +447,7 @@ button, button:active, button:hover, button:visited {
   left: 50%;
   bottom: -30px;
 }
-/* line 413, ../sass/_pages.scss */
+/* line 412, ../sass/_pages.scss */
 .slider .slider_item_card_effect .cross_4 {
   transform: rotate(0deg);
   width: 32px;
@@ -463,7 +463,7 @@ button, button:active, button:hover, button:visited {
   right: -30px;
   bottom: -30px;
 }
-/* line 425, ../sass/_pages.scss */
+/* line 426, ../sass/_pages.scss */
 .slider .slider_item_card_effect .cross_6 {
   transform: rotate(0deg);
   width: 20px;
@@ -471,42 +471,42 @@ button, button:active, button:hover, button:visited {
   right: -20px;
   bottom: -20px;
 }
-/* line 434, ../sass/_pages.scss */
+/* line 435, ../sass/_pages.scss */
 .slider .slider_item_card_effect .ring_1 {
   top: 100%;
   right: 233px;
   width: 239px;
   height: 239px;
 }
-/* line 440, ../sass/_pages.scss */
+/* line 441, ../sass/_pages.scss */
 .slider .slider_item_card_effect .ring_2 {
   top: 100%;
   right: 165px;
   width: 375px;
   height: 375px;
 }
-/* line 446, ../sass/_pages.scss */
+/* line 447, ../sass/_pages.scss */
 .slider .slider_item_card_effect .ring_3 {
   top: 100%;
   right: 99px;
   width: 507px;
   height: 507px;
 }
-/* line 453, ../sass/_pages.scss */
+/* line 454, ../sass/_pages.scss */
 .slider .slider_item_card_effect_cross {
   background: url(../img/cross_effect.svg) no-repeat center;
   background-size: contain;
   position: absolute;
   transition: all linear 0.9s;
 }
-/* line 459, ../sass/_pages.scss */
+/* line 460, ../sass/_pages.scss */
 .slider .slider_item_card_effect_ring {
   background: url(../img/circle_effect.svg) no-repeat center;
   background-size: contain;
   position: absolute;
   transition: all linear 0.9s;
 }
-/* line 469, ../sass/_pages.scss */
+/* line 470, ../sass/_pages.scss */
 .slider .slick-arrow {
   position: absolute;
   top: calc(50% - 35px);
@@ -519,33 +519,33 @@ button, button:active, button:hover, button:visited {
   height: 70px;
   background-position: center;
 }
-/* line 482, ../sass/_pages.scss */
+/* line 483, ../sass/_pages.scss */
 .slider .slick-arrow.slick-prev {
   left: calc(50% - 15px);
   transform: translateX(-510px);
   background-image: url(../img/left.svg);
   background-repeat: no-repeat;
 }
-/* line 487, ../sass/_pages.scss */
+/* line 488, ../sass/_pages.scss */
 .slider .slick-arrow.slick-prev:hover {
   background-image: url(../img/white_left.svg);
   background-color: #1076f9;
   background-repeat: no-repeat;
 }
-/* line 494, ../sass/_pages.scss */
+/* line 495, ../sass/_pages.scss */
 .slider .slick-arrow.slick-next {
   right: calc(50% - 15px);
   transform: translateX(510px);
   background-image: url(../img/right.svg);
   background-repeat: no-repeat;
 }
-/* line 499, ../sass/_pages.scss */
+/* line 500, ../sass/_pages.scss */
 .slider .slick-arrow.slick-next:hover {
   background-image: url(../img/white_right.svg);
   background-color: #1076f9;
   background-repeat: no-repeat;
 }
-/* line 506, ../sass/_pages.scss */
+/* line 507, ../sass/_pages.scss */
 .slider .slick-dots {
   display: flex;
   align-items: center;
@@ -557,13 +557,13 @@ button, button:active, button:hover, button:visited {
   margin-bottom: 0;
   padding: 0;
 }
-/* line 517, ../sass/_pages.scss */
+/* line 518, ../sass/_pages.scss */
 .slider .slick-dots li {
   list-style: none;
   line-height: 0;
   margin: 0px 7px;
 }
-/* line 522, ../sass/_pages.scss */
+/* line 523, ../sass/_pages.scss */
 .slider .slick-dots button {
   font-size: 0;
   width: 15px;
@@ -572,31 +572,31 @@ button, button:active, button:hover, button:visited {
   background-color: #fff;
   border: 1px solid #000000;
 }
-/* line 530, ../sass/_pages.scss */
+/* line 531, ../sass/_pages.scss */
 .slider .slick-dots li.slick-active button {
   background-color: #005de1;
   border: 1px solid #005de1;
 }
 
 /* ╨Ю╨│╤А╨░╨╜╨╕╤З╨╕╨▓╨░╤О╤Й╨░╤П ╨╛╨▒╨╛╨╗╨╛╤З╨║╨░ */
-/* line 537, ../sass/_pages.scss */
+/* line 538, ../sass/_pages.scss */
 .slick-list {
   overflow: hidden;
 }
 
 /* ╨Ы╨╡╨╜╤В╨░ ╤Б╨╗╨░╨╣╨┤╨╛╨▓ */
-/* line 541, ../sass/_pages.scss */
+/* line 542, ../sass/_pages.scss */
 .slick-track {
   display: flex;
   /* ╨Ф╨╗╤П ╨░╨┤╨░╨┐╤В╨╕╨▓╨░ ╤А╨░╨╖╨╝╨╡╤А╨░ ╤Б╨╗╨░╨╣╨┤╨╛╨▓ ╨▓ JS */
   align-items: flex-start;
 }
 
-/* line 547, ../sass/_pages.scss */
+/* line 548, ../sass/_pages.scss */
 .catalog {
   margin-bottom: 132px;
 }
-/* line 549, ../sass/_pages.scss */
+/* line 550, ../sass/_pages.scss */
 .catalog_title {
   display: block;
   text-align: center;
@@ -604,7 +604,7 @@ button, button:active, button:hover, button:visited {
   text-transform: uppercase;
   color: #113566;
 }
-/* line 556, ../sass/_pages.scss */
+/* line 557, ../sass/_pages.scss */
 .catalog .catalog_link {
   margin: 0 auto;
   display: block;
@@ -612,75 +612,122 @@ button, button:active, button:hover, button:visited {
   width: 210px;
   height: 45px;
 }
-/* line 562, ../sass/_pages.scss */
+/* line 563, ../sass/_pages.scss */
 .catalog .catalog_link:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
-/* line 568, ../sass/_pages.scss */
+/* line 569, ../sass/_pages.scss */
 .catalog .catalog_menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   margin-top: 30px;
   margin-bottom: 25px;
 }
-/* line 576, ../sass/_pages.scss */
-.catalog .catalog_menu .catalog_menu_item_info {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
-}
-/* line 580, ../sass/_pages.scss */
-.catalog .catalog_menu .catalog_menu_item_info h2 {
-  font-size: 40px;
-}
-/* line 583, ../sass/_pages.scss */
-.catalog .catalog_menu .catalog_menu_item_info p {
-  font-size: 20px;
-}
-/* line 587, ../sass/_pages.scss */
-.catalog .catalog_menu_item_01 {
-  width: calc(100% / 3);
+/* line 575, ../sass/_pages.scss */
+.catalog .catalog_menu_item {
+  position: relative;
+  width: 350px;
   height: 246px;
-  background-image: url(../img/catalog_img/catalog_01.jpg);
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  border-radius: 10px;
+  text-decoration: none;
+}
+/* line 585, ../sass/_pages.scss */
+.catalog .catalog_menu_item:hover {
+  background: rgba(13, 66, 136, 0.9);
+}
+/* line 589, ../sass/_pages.scss */
+.catalog .catalog_menu_item_info {
+  text-align: start;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 0 40px 51px;
+}
+/* line 596, ../sass/_pages.scss */
+.catalog .catalog_menu_item_info h2 {
+  font-size: 40px;
+}
+/* line 599, ../sass/_pages.scss */
+.catalog .catalog_menu_item_info p {
+  font-size: 20px;
+}
+/* line 603, ../sass/_pages.scss */
+.catalog .catalog_menu_item_effect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+/* line 611, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_01 {
+  background: url(../img/catalog_img/catalog_01.jpg) no-repeat center;
+  background-size: contain;
+}
+/* line 615, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_01:hover {
+  background: rgba(13, 66, 136, 0.9);
+}
+/* line 619, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_02 {
+  background: url(../img/catalog_img/catalog_02.jpg) no-repeat center;
+  background-size: contain;
+}
+/* line 623, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_03 {
+  background: url(../img/catalog_img/catalog_03.jpg) no-repeat center;
+  background-size: contain;
+}
+/* line 627, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_04 {
+  background: url(../img/catalog_img/catalog_04.jpg) no-repeat center;
+  background-size: contain;
+}
+/* line 631, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_05 {
+  background: url(../img/catalog_img/catalog_05.jpg) no-repeat center;
+  background-size: contain;
+}
+/* line 635, ../sass/_pages.scss */
+.catalog .catalog_menu .bg_06 {
+  background: url(../img/catalog_img/catalog_06.jpg) no-repeat center;
+  background-size: contain;
 }
 
-/* line 601, ../sass/_pages.scss */
+/* line 643, ../sass/_pages.scss */
 .service {
   background-color: #ebf3f8;
 }
-/* line 603, ../sass/_pages.scss */
+/* line 645, ../sass/_pages.scss */
 .service_block {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-/* line 608, ../sass/_pages.scss */
+/* line 650, ../sass/_pages.scss */
 .service_block_item {
   width: calc(100% / 2);
   padding-left: 390px;
   padding-right: 40px;
 }
-/* line 612, ../sass/_pages.scss */
+/* line 654, ../sass/_pages.scss */
 .service_block_item:last-child {
   padding: 0;
 }
-/* line 615, ../sass/_pages.scss */
+/* line 657, ../sass/_pages.scss */
 .service_block_item .service_banner {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
 }
-/* line 620, ../sass/_pages.scss */
+/* line 662, ../sass/_pages.scss */
 .service_block_item h2 {
   padding: 51px 0px 28px 0px;
   font-style: normal;
@@ -689,7 +736,7 @@ button, button:active, button:hover, button:visited {
   line-height: 54px;
   color: #113566;
 }
-/* line 628, ../sass/_pages.scss */
+/* line 670, ../sass/_pages.scss */
 .service_block_item p {
   font-style: normal;
   font-weight: normal;
@@ -698,31 +745,31 @@ button, button:active, button:hover, button:visited {
   color: rgba(18, 32, 52, 0.6);
   padding-bottom: 48px;
 }
-/* line 636, ../sass/_pages.scss */
+/* line 678, ../sass/_pages.scss */
 .service_block_item .service_link {
   display: inline-block;
   width: 164px;
   height: 45px;
 }
-/* line 640, ../sass/_pages.scss */
+/* line 682, ../sass/_pages.scss */
 .service_block_item .service_link:hover {
   text-decoration: none;
   background-color: #1076f9;
 }
 
-/* line 650, ../sass/_pages.scss */
+/* line 692, ../sass/_pages.scss */
 .about {
   width: 100%;
   background-image: url(../img/About_img.jpg);
   background-repeat: no-repeat;
 }
-/* line 655, ../sass/_pages.scss */
+/* line 697, ../sass/_pages.scss */
 .about_block_item {
   display: flex;
   flex-wrap: nowrap;
 }
 
-/* line 663, ../sass/_pages.scss */
+/* line 705, ../sass/_pages.scss */
 .footer_wrap {
   width: 100%;
   height: 128px;
@@ -731,7 +778,7 @@ button, button:active, button:hover, button:visited {
   justify-content: center;
   align-items: center;
 }
-/* line 670, ../sass/_pages.scss */
+/* line 712, ../sass/_pages.scss */
 .footer_wrap .footer_block {
   display: flex;
   flex-direction: row;
@@ -739,7 +786,7 @@ button, button:active, button:hover, button:visited {
   justify-content: flex-start;
   align-items: center;
 }
-/* line 677, ../sass/_pages.scss */
+/* line 719, ../sass/_pages.scss */
 .footer_wrap .footer_block_item span {
   padding-left: 96px;
   color: #ffffff;
