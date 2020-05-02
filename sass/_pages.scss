@@ -288,8 +288,7 @@ $color_text_footer: #ffffff;
                         transform: rotate(0deg);
                         width: 30px;
                         height: 30px;
-                        right: 30%;
-                        bottom: 13.5%;
+                        
                     }
                     &_6 {
                         transform: rotate(-38deg);
@@ -299,25 +298,11 @@ $color_text_footer: #ffffff;
                         bottom: 25%;
                     }
                 }
-                .ring {
-                    &_1 {
-                        top: 253px;
-                        right: 233px;
-                        width: 239px;
-                        height: 239px;
-                    }
-                    &_2 {
-                        top: 185px;
-                        right: 165px;
-                        width: 375px;
-                        height: 375px;
-                    }
-                    &_3 {
-                        top: 119px;
-                        right: 99px;
-                        width: 507px;
-                        height: 507px;
-                    }
+                &_ring {
+                    top: 27%;
+                    right: 9%;
+                    width: 506px;
+                    height: 506px;
                 }
             }
         }
@@ -418,10 +403,10 @@ $color_text_footer: #ffffff;
                     }
                     &_5 {
                         transform: rotate(0deg);
-                        width: 30px;
-                        height: 30px;
-                        right: -30px;
-                        bottom: -30px;
+                        width: 0;
+                        height: 0;
+                        right: 30%;
+                        bottom: 13.5%;
                     }
                     &_6 {
                         transform: rotate(0deg);
@@ -431,26 +416,6 @@ $color_text_footer: #ffffff;
                         bottom: -20px;
                     }
                 }
-                .ring {
-                    &_1 {
-                        top: 100%;
-                        right: 233px;
-                        width: 239px;
-                        height: 239px;
-                    }
-                    &_2 {
-                        top: 100%;
-                        right: 165px;
-                        width: 375px;
-                        height: 375px;
-                    }
-                    &_3 {
-                        top: 100%;
-                        right: 99px;
-                        width: 507px;
-                        height: 507px;
-                    }
-                }
                 &_cross {
                     background: url(../img/cross_effect.svg) no-repeat center;
                     background-size: contain;
@@ -458,10 +423,15 @@ $color_text_footer: #ffffff;
                     transition: all linear 0.9s;
                 }
                 &_ring {
-                    background: url(../img/circle_effect.svg) no-repeat center;
+                    background: url(../img/ring_group.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
                     transition: all linear 0.9s;
+                    top: calc(27% + 253px);
+                    right: calc(9% + 253px);
+                    transform: rotate(45deg);
+                    width: 0;
+                    height: 0;
                 }
             }
         }
@@ -478,6 +448,7 @@ $color_text_footer: #ffffff;
         width: 30px;
         height: 70px;
         background-position: center;
+        cursor: pointer;
     }
     /* Стрелка влево */
     .slick-arrow.slick-prev {
@@ -547,6 +518,9 @@ $color_text_footer: #ffffff;
 // =======================Каталог Меню=============
 .catalog {
     margin-bottom: 132px;
+    .container {
+        padding: 0px;
+    }
     &_title {
         display: block;
         text-align: center;
@@ -570,7 +544,7 @@ $color_text_footer: #ffffff;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin-top: 35px;
         margin-bottom: 25px;
         &_item {
             position: relative;
@@ -579,42 +553,125 @@ $color_text_footer: #ffffff;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            justify-content: flex-end;
+            justify-content: flex-start;
+            align-items: flex-start;
             border-radius: 10px;
             text-decoration: none;
-            &:hover{
-                background: rgba(13, 66, 136, 0.9);
+            margin: 15px;
+            overflow: hidden;
+            &:hover {
+                .catalog_menu_item_effect {
+                    opacity: 1;
+                    .cross {
+                        &_1 {
+                            left: 11px;
+                            bottom: 163px;
+                            transform: rotate(402deg);
+                        }
+                        &_2 {
+                            left: 181px;
+                            bottom: 200px;
+                            transform: rotate(398deg);
+                        }
+                        &_3 {
+                            left: 280px;
+                            bottom: 105px;
+                            transform: rotate(415deg);
+                        }
+                        &_4 {
+                            left: 311px;
+                            bottom: 208px;
+                            transform: rotate(615deg);
+                        }
+                    }
+                }
             }
-
             &_info {
-                text-align: start;
-                left: 0;
-                top: 0;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
                 font-weight: bold;
                 color: $color_text_bt;
-                padding: 0 0 40px 51px;
+                padding-left: 40px;
+                padding-right: 80px;
+                padding-top: 105px;
+                z-index: 1;
                 h2 {
+                    display: block;
+                    position: relative;
                     font-size: 40px;
+                    line-height: 54px;
+                    margin-bottom: 7px;
+                    padding-left: 18px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        left: -2px;
+                        bottom: 0;
+                        width: 8px;
+                        height: 8px;
+                        background-color: #ffffff;
+                        transform: rotate(45deg);
+                    }
                 }
                 p {
                     font-size: 20px;
+                    line-height: 27px;
+                    margin: 0px;
                 }
             }
-            &_effect{
+            &_effect {
+                opacity: 0.4;
                 position: absolute;
                 left: 0;
                 top: 0;
-                overflow: hidden;
-                
+                width: 100%;
+                height: 100%;
+                background: rgba(13, 66, 136, 0.8);
+                &_cross {
+                    background: url(../img/cross_effect.svg) no-repeat center;
+                    background-size: contain;
+                    position: absolute;
+                    transition: all linear 0.5s;
+                }
+                .cross {
+                    &_1 {
+                        transform: rotate(0deg);
+                        width: 15px;
+                        height: 15px;
+                        left: -30px;
+                        bottom: -30px;
+                    }
+                    &_2 {
+                        transform: rotate(0deg);
+                        width: 20px;
+                        height: 20px;
+                        left: -30px;
+                        bottom: -30px;
+                    }
+                    &_3 {
+                        transform: rotate(0deg);
+                        width: 20px;
+                        height: 20px;
+                        left: -30px;
+                        bottom: -30px;
+                    }
+                    &_4 {
+                        transform: rotate(0deg);
+                        width: 30px;
+                        height: 30px;
+                        left: -30px;
+                        bottom: -30px;
+                    }
+                }
             }
         }
         .bg_01 {
             background: url(../img/catalog_img/catalog_01.jpg) no-repeat center;
             background-size: contain;
-            
-            &:hover{
-                background: rgba(13, 66, 136, 0.9);
-            }
         }
         .bg_02 {
             background: url(../img/catalog_img/catalog_02.jpg) no-repeat center;
@@ -677,6 +734,7 @@ $color_text_footer: #ffffff;
             }
             .service_link {
                 display: inline-block;
+                box-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
                 width: 164px;
                 height: 45px;
                 &:hover {
