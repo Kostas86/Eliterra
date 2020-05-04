@@ -288,7 +288,6 @@ $color_text_footer: #ffffff;
                         transform: rotate(0deg);
                         width: 30px;
                         height: 30px;
-                        
                     }
                     &_6 {
                         transform: rotate(-38deg);
@@ -564,23 +563,23 @@ $color_text_footer: #ffffff;
                     opacity: 1;
                     .cross {
                         &_1 {
-                            left: 11px;
-                            bottom: 163px;
+                            left: 3%;
+                            bottom: 66%;
                             transform: rotate(402deg);
                         }
                         &_2 {
-                            left: 181px;
-                            bottom: 200px;
+                            left: 51%;
+                            bottom: 81%;
                             transform: rotate(398deg);
                         }
                         &_3 {
-                            left: 280px;
-                            bottom: 105px;
+                            left: 80%;
+                            bottom: 45%;
                             transform: rotate(415deg);
                         }
                         &_4 {
-                            left: 311px;
-                            bottom: 208px;
+                            left: 90%;
+                            bottom: 84%;
                             transform: rotate(615deg);
                         }
                     }
@@ -699,23 +698,18 @@ $color_text_footer: #ffffff;
 // =======================Сервис=============
 .service {
     background-color: $color_1;
+    margin-bottom: 104px;
     &_block {
+        height: 450px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-        &_item {
-            width: calc(100% / 2);
-            padding-left: 390px;
-            padding-right: 40px;
-            &:last-child {
-                padding: 0;
-            }
-            .service_banner {
-                width: 100%;
-                border-radius: 10px;
-                box-shadow: 0px 4px 5px rgba(18, 32, 52, 0.6);
-            }
+        &_info {
+            width: 55%;
+            padding-left: 404px;
+            padding-right: 105px;
+
             h2 {
                 padding: 51px 0px 28px 0px;
                 font-style: normal;
@@ -744,8 +738,80 @@ $color_text_footer: #ffffff;
                 @extend %link_more;
             }
         }
+        &_banner {
+            width: 45%;
+            position: relative;
+            &:hover {
+                .service_block_banner_effect {
+                    &_ring {
+                        top: 15%;
+                        right: 38%;
+                        width: 506px;
+                        height: 506px;
+                    }
+                }
+            }
+            &_img {
+                box-shadow: 4px 4px 30px rgba(18, 32, 52, 0.6);
+                border-radius: 15px;
+                background: linear-gradient(270deg, #113566 0%, #0c4187 29.17%, #005ed5 71.87%);
+            }
+            &_effect {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                &_ring {
+                    background: url(../img/ring_group.svg) no-repeat center;
+                    background-size: contain;
+                    position: absolute;
+                    transition: all linear 0.4s;
+                    top: calc(15% + 253px);
+                    right: calc(38% + 253px);
+                    transform: rotate(45deg);
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
     }
 }
+// =======================Наши Партнеры=============
+.partners {
+    h2 {
+        display: block;
+        font-size: 34px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color_h;
+    }
+    .partners_slider {
+        &_item {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 255px;
+            height: 307px;
+            margin: 20px 25px;
+            background: #ffffff;
+            box-shadow: 4px 4px 30px rgba(18, 32, 52, 0.2);
+            border-radius: 10px;
+            img {
+                display: block;
+            }
+            h3 {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+
 // =======================О компании===================
 .about {
     width: 100%;

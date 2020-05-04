@@ -10,3 +10,12 @@ $(document).ready(function () {
 
     });
 });
+$(document).ready(function () {
+    $('.partners_slider').slick({
+        arrows: false,
+        dots: true,
+        centerMode: false,
+        slidesToShow: 3,
+        variableWidth:true,
+    });
+});
