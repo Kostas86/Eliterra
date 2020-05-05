@@ -15,7 +15,11 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
         centerMode: false,
-        slidesToShow: 3,
         variableWidth:true,
+        slidesToShow: 4,
+        autoplay:false,
+        autoplaySpeed:3000,
+        adaptiveHeight:true,
+        variableWidth:false,
     });
 });

@@ -419,13 +419,13 @@ $color_text_footer: #ffffff;
                     background: url(../img/cross_effect.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
-                    transition: all linear 0.9s;
+                    transition: all linear 0.6s;
                 }
                 &_ring {
                     background: url(../img/ring_group.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
-                    transition: all linear 0.9s;
+                    transition: all linear 0.6s;
                     top: calc(27% + 253px);
                     right: calc(9% + 253px);
                     transform: rotate(45deg);
@@ -767,7 +767,7 @@ $color_text_footer: #ffffff;
                     background: url(../img/ring_group.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
-                    transition: all linear 0.4s;
+                    transition: all linear 0.2s;
                     top: calc(15% + 253px);
                     right: calc(38% + 253px);
                     transform: rotate(45deg);
@@ -787,33 +787,121 @@ $color_text_footer: #ffffff;
         text-align: center;
         text-transform: uppercase;
         color: $color_h;
+        margin-bottom: 30px;
     }
     .partners_slider {
+        position: relative;
         &_item {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            width: 255px;
             height: 307px;
-            margin: 20px 25px;
-            background: #ffffff;
-            box-shadow: 4px 4px 30px rgba(18, 32, 52, 0.2);
-            border-radius: 10px;
-            img {
-                display: block;
+            margin: 35px 15px;
+            &:hover {
+                box-shadow: 0px 0px 15px rgba(18, 32, 52, 0.2);
+                border-radius: 10px;
+                .img_01 {
+                    background: url(../img/SP_img/kasp_w.jpg) no-repeat center;
+                    background-size: contain;
+                }
+                .img_02 {
+                    background: url(../img/SP_img/drweb_w.jpg) no-repeat center;
+                    background-size: contain;
+                }
+                .img_03 {
+                    background: url(../img/SP_img/taile_w.jpg) no-repeat center;
+                    background-size: contain;
+                }
+                .img_04 {
+                    background: url(../img/SP_img/win10_w.jpg) no-repeat center;
+                    background-size: contain;
+                }
+            }
+            &_img_wrap{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 212px;
+                height: 208px;
+                margin-bottom: 12px;
+                .img_01 {
+                    width: 137px;
+                    height: 140px;
+                    background: url(../img/SP_img/kasp_b.jpg) no-repeat center;
+                    background-size: contain;
+                }
+                .img_02 {
+                    width: 184px;
+                    height: 188px;
+                    background: url(../img/SP_img/drweb_b.jpg) no-repeat center;
+                    background-size: contain;
+                }
+                .img_03 {
+                    width: 183px;
+                    height: 110px;
+                    background: url(../img/SP_img/taile_b.jpg) no-repeat center;
+                    background-size: contain;
+                }
+                .img_04 {
+                    width: 212px;
+                    height: 133px;
+                    background: url(../img/SP_img/win10_b.jpg) no-repeat center;
+                    background-size: contain;
+                }
+
             }
             h3 {
                 display: block;
                 text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                color:$color_text1;
             }
+        }
+        .slick-track{
+            margin-bottom: 30px;
+        }
+        .slick-list{
+            position: relative;
+        }
+        .slick-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 100%);
+            margin-bottom: 0;
+            padding: 0;
+        }
+        .slick-dots li {
+            list-style: none;
+            line-height: 0;
+            margin: 0px 7px;
+        }
+        .slick-dots button {
+            font-size: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #000000;
+        }
+        .slick-dots li.slick-active button {
+            background-color: #005de1;
+            border: 1px solid #005de1;
         }
     }
 }
 
 // =======================О компании===================
 .about {
+    margin-top: 110px;
     width: 100%;
     background-image: url(../img/About_img.jpg);
     background-repeat: no-repeat;
