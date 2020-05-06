@@ -819,7 +819,7 @@ $color_text_footer: #ffffff;
                     background-size: contain;
                 }
             }
-            &_img_wrap{
+            &_img_wrap {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -852,20 +852,19 @@ $color_text_footer: #ffffff;
                     background: url(../img/SP_img/win10_b.jpg) no-repeat center;
                     background-size: contain;
                 }
-
             }
             h3 {
                 display: block;
                 text-align: center;
                 font-size: 18px;
                 font-weight: bold;
-                color:$color_text1;
+                color: $color_text1;
             }
         }
-        .slick-track{
-            margin-bottom: 30px;
+        .slick-track {
+            margin-bottom: 20px;
         }
-        .slick-list{
+        .slick-list {
             position: relative;
         }
         .slick-dots {
@@ -906,9 +905,292 @@ $color_text_footer: #ffffff;
     background-image: url(../img/About_img.jpg);
     background-repeat: no-repeat;
     &_block {
+        padding-top: 80px;
         &_item {
             display: flex;
             flex-wrap: nowrap;
+            margin-bottom: 70px;
+            &_about {
+                width: 45%;
+                padding-right: 140px;
+                h2 {
+                    display: block;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 40px;
+                    line-height: 54px;
+                    color: #113566;
+                    margin-bottom: 40px;
+                }
+                p {
+                    display: block;
+                    font-size: 18px;
+                    color: #000000;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            &_advantages {
+                width: 55%;
+                h4 {
+                    margin: 0px;
+                    display: block;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #122034;
+                }
+                .advantages_list {
+                    list-style: none;
+                    padding-right: 50px;
+                    padding-left: 0;
+                    margin-top: 22px;
+                    margin-bottom: 100px;
+                    li {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #000000;
+                        padding-bottom: 20px;
+                        position: relative;
+                        padding-left: 27px;
+                        &:before {
+                            content: "";
+                            background-image: url(../img/about_vector.svg);
+                            position: absolute;
+                            width: 20px;
+                            height: 16px;
+                            left: 0;
+                            top: 3px;
+                        }
+                        &:last-child {
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+                a {
+                    display: inline-block;
+                    margin-right: 20px;
+                    margin-top: 16px;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color: #015ed5;
+                    position: relative;
+                    .vk {
+                        position: absolute;
+                        top: calc(50% - 7px);
+                        left: calc(50% - 5px);
+                        background: url(../img/vk.svg);
+                        width: 10px;
+                        height: 14px;
+                    }
+                    .ok {
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 5px);
+                        background: url(../img/ok.svg);
+                        width: 10px;
+                        height: 16px;
+                    }
+                    .watsup {
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        left: calc(50% - 10px);
+                        background: url(../img/watsup.svg);
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .viber {
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        left: calc(50% - 10px);
+                        background: url(../img/viber.svg);
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            &_retail {
+                width: 45%;
+                padding-right: 200px;
+                h3 {
+                    display: block;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 33px;
+                    color: #122034;
+                    margin-bottom: 30px;
+                }
+                a {
+                    display: block;
+                    position: relative;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+                &_adress {
+                    padding-left: 39px;
+                    &:before {
+                        content: "";
+                        background-image: url(../img/map_point_about.svg);
+                        position: absolute;
+                        width: 14px;
+                        height: 20px;
+                        left: 0;
+                        top: 3px;
+                    }
+                }
+                &_tel {
+                    padding-left: 41px;
+                    &:before {
+                        content: "";
+                        background-image: url(../img/header_phone.svg);
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        left: 0;
+                        top: 3px;
+                    }
+                    span{
+                        font-weight: bold;
+                        font-size: 22px;
+                    }
+                }
+            }
+            &_corporate {
+                width: 55%;
+                a {
+                    display: block;
+                    position: relative;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    display: block;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 33px;
+                    color: #122034;
+                    margin-bottom: 30px;
+                }
+                &_adress{
+                    padding-left: 39px;
+                    &:before {
+                        content: "";
+                        background-image: url(../img/map_point_about.svg);
+                        position: absolute;
+                        width: 14px;
+                        height: 20px;
+                        left: 0;
+                        top: 3px;
+                    }
+                }
+                &_tel-list{
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    padding-left: 28px;
+                    margin-bottom: 0px;
+                    span{
+                        font-weight: bold;
+                        font-size: 22px;
+                    }
+                    &:before {
+                        content: "";
+                        background-image: url(../img/header_phone.svg);
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        left: 0;
+                        top: 3px;
+                    }
+                    li {
+                        position: relative;
+                        padding-right: 11px;
+                        margin-left: 10px;
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            right: 0;
+                            top: 4px;
+                            width: 1px;
+                            height: 20px;
+                            background-color: $color_text2;
+                        }
+                    }
+
+                }
+                &_mail-list{
+                    margin-bottom: 0px;
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    padding-left: 28px;
+                    span{
+                        font-weight: bold;
+                        font-size: 22px;
+                    }
+                    &:before {
+                        content: "";
+                        background-image: url(../img/header_mail.svg);
+                        position: absolute;
+                        width: 20px;
+                        height: 16px;
+                        left: 0;
+                        top: 5px;
+                    }
+                    li {
+                        position: relative;
+                        padding-right: 11px;
+                        margin-left: 10px;
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            right: 0;
+                            top: 4px;
+                            width: 1px;
+                            height: 20px;
+                            background-color: $color_text2;
+                        }
+                    }
+
+
+                }
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
         }
     }
 }

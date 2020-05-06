@@ -4,7 +4,7 @@ $(document).ready(function () {
         dots: true,
         centerMode: true,
         slidesToShow: 1,
-        autoplay:false,
+        autoplay:true,
         autoplaySpeed:3000,
         variableWidth:true,
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
         centerMode: false,
         variableWidth:true,
         slidesToShow: 4,
-        autoplay:false,
+        autoplay:true,
         autoplaySpeed:3000,
         adaptiveHeight:true,
         variableWidth:false,
