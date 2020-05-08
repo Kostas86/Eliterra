@@ -780,6 +780,7 @@ $color_text_footer: #ffffff;
     }
     .partners_slider {
         position: relative;
+        text-decoration: none;
         &_item {
             display: flex;
             flex-direction: column;
@@ -791,6 +792,7 @@ $color_text_footer: #ffffff;
             &:hover {
                 box-shadow: 0px 0px 15px rgba(18, 32, 52, 0.2);
                 border-radius: 10px;
+                text-decoration: none;
                 .img_01 {
                     background: url(../img/SP_img/kasp_w.jpg) no-repeat center;
                     background-size: contain;
@@ -848,6 +850,7 @@ $color_text_footer: #ffffff;
                 font-size: 18px;
                 font-weight: bold;
                 color: $color_text1;
+                text-decoration: none;
             }
         }
         .slick-track {
@@ -893,6 +896,7 @@ $color_text_footer: #ffffff;
     width: 100%;
     background-image: url(../img/About_img.jpg);
     background-repeat: no-repeat;
+    margin-bottom: 60px;
     &_block {
         padding-top: 80px;
         &_item {
@@ -969,6 +973,9 @@ $color_text_footer: #ffffff;
                     border-radius: 50%;
                     background-color: #015ed5;
                     position: relative;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                     .vk {
                         position: absolute;
                         top: calc(50% - 7px);
@@ -1025,6 +1032,10 @@ $color_text_footer: #ffffff;
                     line-height: 25px;
                     color: #000000;
                     margin-bottom: 20px;
+                    &:hover{
+                        text-decoration: none;
+                        opacity: 0.6;
+                    }
                 }
                 &_adress {
                     padding-left: 39px;
@@ -1067,6 +1078,10 @@ $color_text_footer: #ffffff;
                     line-height: 25px;
                     color: #000000;
                     margin-bottom: 20px;
+                    &:hover{
+                        text-decoration: none;
+                        opacity: 0.6;
+                    }
                 }
                 h3 {
                     display: block;
@@ -1173,21 +1188,22 @@ $color_text_footer: #ffffff;
                         }
                     }
                 }
+            } 
+            &:last-child{
+                margin-bottom: 0px;
             }
-        }
+        } 
     }
 }
 // =======================Карта===================
 .opacity {
     position: absolute;
     width: 100%;
-    height: 60px;
-    background-color: #000000;
-    // background: linear-gradient(180deg, #F8FBFD 48.29%, rgba(255, 255, 255, 0) 93.98%);
+    height: 50px;
+    background-color: #ffffff;
+    background: linear-gradient(180deg, #F8FBFD 48.29%, rgba(255, 255, 255, 0) 93.98%);
     opacity: 1;
-}
-.ymaps-2-1-76-map {
-    position: relative;
+    z-index: 1;
 }
 .main_map {
     position: relative;
@@ -1196,7 +1212,6 @@ $color_text_footer: #ffffff;
     margin: 0;
     padding: 0;
 }
-
 // =======================Подвал===================
 .footer_wrap {
     width: 100%;

@@ -17,10 +17,11 @@ $(document).ready(function () {
         centerMode: false,
         variableWidth: true,
         slidesToShow: 4,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         variableWidth: false,
+        
     });
 });
 ymaps.ready(init);

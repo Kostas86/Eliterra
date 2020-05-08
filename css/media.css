@@ -1,0 +1,15 @@
+@media screen and (max-width: 767px) {
+  /* line 6, ../sass/media.scss */
+  .container {
+    max-width: 767px;
+  }
+
+  /* line 9, ../sass/media.scss */
+  .navigation_row_item {
+    width: 100%;
+  }
+  /* line 11, ../sass/media.scss */
+  .navigation_row_item:last-child {
+    display: none;
+  }
+}
