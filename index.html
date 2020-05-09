@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -242,49 +242,49 @@
         <div class="partners_slider">
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_01"></div>
+                    <div class="img_01 img"></div>
                 </div>
                 <h3>Лаборатория<br>Касперского</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_02"></div>
+                    <div class="img_02 img"></div>
                 </div>
                 <h3>«Доктор Веб»</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_03"></div>
+                    <div class="img_03 img"></div>
                 </div>
                 <h3>Производитель сетевого оборудования</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_04"></div>
+                    <div class="img_04 img"></div>
                 </div>
                 <h3>Windows 10</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_01"></div>
+                    <div class="img_01 img"></div>
                 </div>
                 <h3>Лаборатория<br>Касперского</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_02"></div>
+                    <div class="img_02 img"></div>
                 </div>
                 <h3>«Доктор Веб»</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_03"></div>
+                    <div class="img_03 img"></div>
                 </div>
                 <h3>Производитель сетевого оборудования</h3>
             </div>
             <div class="partners_slider_item">
                 <div class="partners_slider_item_img_wrap">
-                    <div class="img_04"></div>
+                    <div class="img_04 img"></div>
                 </div>
                 <h3>Windows 10</h3>
             </div>
@@ -331,12 +331,12 @@
             <div class="about_block_item">
                 <div class="about_block_item_retail">
                     <h3>Розничный отдел</h3>
-                    <a class="about_block_item_retail_adress" href="#">Курская обл., г.Железногорск, ул. Ленина, д.61 </a>
+                    <a class="about_block_item_retail_adress" data-js-map="adrr1" href="#">Курская обл., г.Железногорск, ул. Ленина, д.61 </a>
                     <a class="about_block_item_retail_tel" href="#">8 (47148) <span>4-33-99</span></a>
                 </div>
                 <div class="about_block_item_corporate">
                     <h3>Корпоративный отдел, Сервисный центр</h3>
-                    <a class="about_block_item_corporate_adress" href="#">Курская обл., г.Железногорск, Детский пер., д.11</a>
+                    <a class="about_block_item_corporate_adress" data-js-map="adrr2" href="#">Курская обл., г.Железногорск, Детский пер., д.11</a>
                     <ul class="about_block_item_corporate_tel-list">
                         <li><a href="#">8 (47148) <span>4-33-99</span> </a></li>
                         <li><a href="#"> +7 (910) <span>218-67-99</span></a></li>
@@ -350,12 +350,13 @@
             </div>
         </div>
     </div>
-    <div class="opacity"></div>
-    <div id="map" class="main_map"></div>
+    <div id="map" class="main_map">
+        <div class="opacity"></div>
+    </div>
     <footer>
         <div class="footer_wrap">
             <div class="container footer_block">
-                <div class="home"><a class="up_home" href="#"></a></div>
+                <a href="#" class="home" data-js="scrollTop"><i class="up_home"></i></a>
                 <div class="footer_block_item">
                     <img src="img/Footer_logo.svg" alt="no picture">
                 </div>
@@ -366,9 +367,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    
     <script src="https://api-maps.yandex.ru/2.1/?apikey=9573af49-6d75-4a1d-9f6d-e9f4a4a1df35&lang=ru_RU"
     type="text/javascript">
     </script>
