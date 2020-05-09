@@ -551,7 +551,7 @@ $color_text_footer: #ffffff;
         margin-bottom: 25px;
         &_item {
             position: relative;
-            width: 350px;
+            width: calc(100% / 3 - 30px);
             height: 246px;
             display: flex;
             flex-direction: column;
@@ -562,6 +562,7 @@ $color_text_footer: #ffffff;
             text-decoration: none;
             margin: 15px;
             overflow: hidden;
+            background-size: cover!important;
             &:hover {
                 .catalog_menu_item_effect {
                     opacity: 1;
@@ -674,27 +675,21 @@ $color_text_footer: #ffffff;
         }
         .bg_01 {
             background: url(../img/catalog_img/catalog_01.jpg) no-repeat center;
-            background-size: contain;
         }
         .bg_02 {
             background: url(../img/catalog_img/catalog_02.jpg) no-repeat center;
-            background-size: contain;
         }
         .bg_03 {
             background: url(../img/catalog_img/catalog_03.jpg) no-repeat center;
-            background-size: contain;
         }
         .bg_04 {
             background: url(../img/catalog_img/catalog_04.jpg) no-repeat center;
-            background-size: contain;
         }
         .bg_05 {
             background: url(../img/catalog_img/catalog_05.jpg) no-repeat center;
-            background-size: contain;
         }
         .bg_06 {
             background: url(../img/catalog_img/catalog_06.jpg) no-repeat center;
-            background-size: contain;
         }
     }
 }
@@ -705,8 +700,8 @@ $color_text_footer: #ffffff;
     margin-bottom: 104px;
     &.active {
         .service_block_banner_effect_ring {
-            top: 15%;
-            right:38%;
+            top: 50px;
+            left:30px;
             width: 506px;
             height: 506px;
         }
@@ -719,8 +714,8 @@ $color_text_footer: #ffffff;
         justify-content: space-between;
         &_info {
             width: 55%;
-            padding-left: 404px;
-            padding-right: 105px;
+            padding-right: 65px;
+            flex-shrink: 0;
 
             h2 {
                 padding: 51px 0px 28px 0px;
@@ -751,9 +746,10 @@ $color_text_footer: #ffffff;
             }
         }
         &_banner {
-            width: 45%;
             position: relative;
+            flex-shrink: 0;
             &_img {
+                width: 880px;
                 box-shadow: 4px 4px 30px rgba(18, 32, 52, 0.6);
                 border-radius: 15px;
                 background: linear-gradient(270deg, #113566 0%, #0c4187 29.17%, #005ed5 71.87%);
@@ -769,8 +765,8 @@ $color_text_footer: #ffffff;
                     background: url(../img/ring_group.svg) no-repeat center;
                     background-size: contain;
                     position: absolute;
-                    top: calc(15% + 253px);
-                    right: calc(38% + 253px);
+                    top: calc(50px + 253px);
+                    left: calc(30px + 253px);
                     transform: rotate(45deg);
                     width: 0px;
                     height: 0px;
@@ -913,6 +909,7 @@ $color_text_footer: #ffffff;
     width: 100%;
     background-image: url(../img/About_img.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 60px;
     &_block {
         padding-top: 80px;
@@ -1232,7 +1229,6 @@ $color_text_footer: #ffffff;
 // =======================Подвал===================
 .footer_wrap {
     width: 100%;
-
     background-color: $color_footer;
     display: flex;
     justify-content: center;
@@ -1245,6 +1241,9 @@ $color_text_footer: #ffffff;
         justify-content: flex-start;
         align-items: center;
         position: relative;
+        &_logo{
+            margin-right: 94px;
+        }
         .home {
             position: absolute;
             width: 60px;
@@ -1266,11 +1265,12 @@ $color_text_footer: #ffffff;
                 height: 24px;
             }
         }
-        &_item {
+        &_copyrigt {
             span {
-                padding-left: 96px;
+                display: block;
                 color: $color_text_footer;
                 font-size: 16px;
+                position: relative;
             }
         }
     }
