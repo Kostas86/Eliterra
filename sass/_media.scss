@@ -5,6 +5,9 @@
     .navigation_row {
         justify-content: center;
     }
+    .slider{
+        margin-bottom: 55px;
+    }
     .slider .slider_item_card {
         width: 960px;
     }
@@ -55,22 +58,89 @@
         width: 100%;
         margin-bottom: 31px;
     }
-    .about_block_item_advantages .advantages_list{
+    .about_block_item_advantages .advantages_list {
         padding-right: 249px;
         margin-bottom: 54px;
     }
     .about_block_item_retail {
         width: 100%;
-        padding-right:0px;
+        padding-right: 0px;
         margin-bottom: 18px;
     }
-    .footer_wrap .footer_block_copyrigt span{
+    .footer_wrap .footer_block_copyrigt span {
         padding-right: 200px;
-
     }
 }
 @media screen and (max-width: 991px) {
-
+    .nav {
+        flex-wrap: nowrap;
+    }
+    .navigation_row .nav li {
+        font-size: 14px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .navigation_row .nav li a {
+        text-align: justify;
+        white-space: nowrap;
+    }
+    .navigation_row .nav li:not(.home_ico) a:hover {
+        font-weight: bold;
+    }
+    .header_contacts_item_links {
+    }
+    .header_contacts_item_links_telgroup .header_contacts_tel-list {
+        flex-direction: column;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        &:before {
+            display: none;
+        }
+    }
+    .header_contacts_item_links_telgroup .header_contacts_tel-list li {
+        padding-left: 28px;
+        margin-bottom: 10px;
+        &:before {
+            content: "";
+            background-image: url(../img/header_phone.svg);
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: calc(50% - 9px);
+        }
+    }
+    .header_contacts_item_links_telgroup .header_contacts_tel-list li:after {
+        display: none;
+    }
+    .slider .slider_item_card {
+        width: 690px;
+        height: 280px;
+    }
+    .slider .slick-arrow.slick-next {
+        transform: translateX(345px);
+        right: 50%;
+    }
+    .slider .slick-arrow.slick-prev {
+        transform: translateX(-345px);
+        left: 50%;
+    }
+    .slider .slider_item_card_info {
+        padding-left: 60px;
+        padding-right: 75px;
+    }
+    .slider .slider_item_card_info h2 {
+        font-size: 30px;
+        line-height: 35px;
+        padding-top: 45px;
+        margin-bottom: 10px;
+    }
+    .slider .slider_item_card_info p {
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
 }
 @media screen and (max-width: 767px) {
 }

@@ -37,6 +37,7 @@ $color_text_footer: #ffffff;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: nowrap;
         .nav li {
             font-size: 16px;
             margin-right: 30px;
