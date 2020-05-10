@@ -5,7 +5,7 @@
     .navigation_row {
         justify-content: center;
     }
-    .slider{
+    .slider {
         margin-bottom: 55px;
     }
     .slider .slider_item_card {
@@ -140,6 +140,42 @@
         font-size: 20px;
         padding-top: 0px;
         padding-bottom: 20px;
+    }
+    .catalog_title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .catalog .catalog_menu_item {
+        width: calc(100% / 2 - 30px);
+        height: 203px;
+    }
+    .catalog .catalog_menu_item_info {
+        padding-right: 74px;
+        padding-top: 76px;
+    }
+    .service_block {
+        flex-direction: column-reverse;
+        height: 750px;
+    }
+    .service_block_info {
+        width: 100%;
+        padding-right: 0;
+    }
+    .service_block_banner {
+        height: 40%;
+    }
+    .service_block_banner_img {
+        height: 100%;
+        background-size: contain;
+    }
+    .about_block_item_advantages .advantages_list {
+        padding-right: 30px;
+        margin-bottom: 40px;
+    }.about_block_item_corporate {
+        width: 100%;
+    }
+    .footer_wrap .footer_block_copyrigt span {
+        padding-right: 68px;
     }
 }
 @media screen and (max-width: 767px) {

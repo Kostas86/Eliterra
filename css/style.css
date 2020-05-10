@@ -1628,6 +1628,63 @@ button, button:active, button:hover, button:visited {
     padding-top: 0px;
     padding-bottom: 20px;
   }
+
+  /* line 144, ../sass/_media.scss */
+  .catalog_title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  /* line 148, ../sass/_media.scss */
+  .catalog .catalog_menu_item {
+    width: calc(100% / 2 - 30px);
+    height: 203px;
+  }
+
+  /* line 152, ../sass/_media.scss */
+  .catalog .catalog_menu_item_info {
+    padding-right: 74px;
+    padding-top: 76px;
+  }
+
+  /* line 156, ../sass/_media.scss */
+  .service_block {
+    flex-direction: column-reverse;
+    height: 750px;
+  }
+
+  /* line 160, ../sass/_media.scss */
+  .service_block_info {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  /* line 164, ../sass/_media.scss */
+  .service_block_banner {
+    height: 40%;
+  }
+
+  /* line 167, ../sass/_media.scss */
+  .service_block_banner_img {
+    height: 100%;
+    background-size: contain;
+  }
+
+  /* line 171, ../sass/_media.scss */
+  .about_block_item_advantages .advantages_list {
+    padding-right: 30px;
+    margin-bottom: 40px;
+  }
+
+  /* line 174, ../sass/_media.scss */
+  .about_block_item_corporate {
+    width: 100%;
+  }
+
+  /* line 177, ../sass/_media.scss */
+  .footer_wrap .footer_block_copyrigt span {
+    padding-right: 68px;
+  }
 }
 /* line 7, ../sass/style.scss */
 body {
