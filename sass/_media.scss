@@ -72,6 +72,9 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .navigation_row {
+        justify-content: space-between;
+    }
     .nav {
         flex-wrap: nowrap;
     }
@@ -85,11 +88,7 @@
         text-align: justify;
         white-space: nowrap;
     }
-    .navigation_row .nav li:not(.home_ico) a:hover {
-        font-weight: bold;
-    }
-    .header_contacts_item_links {
-    }
+    
     .header_contacts_item_links_telgroup .header_contacts_tel-list {
         flex-direction: column;
         padding-left: 0px;
