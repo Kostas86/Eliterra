@@ -88,7 +88,7 @@
         text-align: justify;
         white-space: nowrap;
     }
-    
+
     .header_contacts_item_links_telgroup .header_contacts_tel-list {
         flex-direction: column;
         padding-left: 0px;
@@ -109,12 +109,41 @@
             left: 0;
             top: calc(50% - 9px);
         }
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
     .header_contacts_item_links_telgroup .header_contacts_tel-list li:after {
         display: none;
     }
-    .header_contacts_item_adress{
+    .header_contacts_item_links_mailgroup {
+        margin-left: 42px;
+    }
+    .header_contacts_item_adress {
         display: none;
+    }
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list:before{
+        display: none;
+    }
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list li {
+        padding-left: 38px;
+        &:first-child:before {
+            content: "";
+            background-image: url(../img/header_mail.svg);
+            position: absolute;
+            width: 20px;
+            height: 16px;
+            left: 0;
+            top: 7px;
+        }
+        
+    }
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list .mobile_dropdown {
+        display: block;
     }
     .slider .slider_item_card {
         width: 690px;
@@ -173,7 +202,8 @@
     .about_block_item_advantages .advantages_list {
         padding-right: 30px;
         margin-bottom: 40px;
-    }.about_block_item_corporate {
+    }
+    .about_block_item_corporate {
         width: 100%;
     }
     .footer_wrap .footer_block_copyrigt span {

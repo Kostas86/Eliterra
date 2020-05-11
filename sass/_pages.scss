@@ -164,6 +164,10 @@ $color_text_footer: #ffffff;
                             opacity: 0.6;
                         }
                     }
+                    .mobil_dropdown {
+                        display: none;
+                       
+                    }
                 }
             }
         }
@@ -563,7 +567,7 @@ $color_text_footer: #ffffff;
             text-decoration: none;
             margin: 15px;
             overflow: hidden;
-            background-size: cover!important;
+            background-size: cover !important;
             &:hover {
                 .catalog_menu_item_effect {
                     opacity: 1;
@@ -702,7 +706,7 @@ $color_text_footer: #ffffff;
     &.active {
         .service_block_banner_effect_ring {
             top: 50px;
-            left:30px;
+            left: 30px;
             width: 506px;
             height: 506px;
         }
@@ -1242,7 +1246,7 @@ $color_text_footer: #ffffff;
         justify-content: flex-start;
         align-items: center;
         position: relative;
-        &_logo{
+        &_logo {
             margin-right: 94px;
         }
         .home {
