@@ -1591,30 +1591,35 @@ button, button:active, button:hover, button:visited {
   }
 
   /* line 116, ../sass/_media.scss */
+  .header_contacts_item_adress {
+    display: none;
+  }
+
+  /* line 119, ../sass/_media.scss */
   .slider .slider_item_card {
     width: 690px;
     height: 280px;
   }
 
-  /* line 120, ../sass/_media.scss */
+  /* line 123, ../sass/_media.scss */
   .slider .slick-arrow.slick-next {
     transform: translateX(345px);
     right: 50%;
   }
 
-  /* line 124, ../sass/_media.scss */
+  /* line 127, ../sass/_media.scss */
   .slider .slick-arrow.slick-prev {
     transform: translateX(-345px);
     left: 50%;
   }
 
-  /* line 128, ../sass/_media.scss */
+  /* line 131, ../sass/_media.scss */
   .slider .slider_item_card_info {
     padding-left: 60px;
     padding-right: 75px;
   }
 
-  /* line 132, ../sass/_media.scss */
+  /* line 135, ../sass/_media.scss */
   .slider .slider_item_card_info h2 {
     font-size: 30px;
     line-height: 35px;
@@ -1622,66 +1627,66 @@ button, button:active, button:hover, button:visited {
     margin-bottom: 10px;
   }
 
-  /* line 138, ../sass/_media.scss */
+  /* line 141, ../sass/_media.scss */
   .slider .slider_item_card_info p {
     font-size: 20px;
     padding-top: 0px;
     padding-bottom: 20px;
   }
 
-  /* line 143, ../sass/_media.scss */
+  /* line 146, ../sass/_media.scss */
   .catalog_title {
     font-size: 24px;
     line-height: 33px;
   }
 
-  /* line 147, ../sass/_media.scss */
+  /* line 150, ../sass/_media.scss */
   .catalog .catalog_menu_item {
     width: calc(100% / 2 - 30px);
     height: 203px;
   }
 
-  /* line 151, ../sass/_media.scss */
+  /* line 154, ../sass/_media.scss */
   .catalog .catalog_menu_item_info {
     padding-right: 74px;
     padding-top: 76px;
   }
 
-  /* line 155, ../sass/_media.scss */
+  /* line 158, ../sass/_media.scss */
   .service_block {
     flex-direction: column-reverse;
     height: 750px;
   }
 
-  /* line 159, ../sass/_media.scss */
+  /* line 162, ../sass/_media.scss */
   .service_block_info {
     width: 100%;
     padding-right: 0;
   }
 
-  /* line 163, ../sass/_media.scss */
+  /* line 166, ../sass/_media.scss */
   .service_block_banner {
     height: 40%;
   }
 
-  /* line 166, ../sass/_media.scss */
+  /* line 169, ../sass/_media.scss */
   .service_block_banner_img {
     height: 100%;
     background-size: contain;
   }
 
-  /* line 170, ../sass/_media.scss */
+  /* line 173, ../sass/_media.scss */
   .about_block_item_advantages .advantages_list {
     padding-right: 30px;
     margin-bottom: 40px;
   }
 
-  /* line 173, ../sass/_media.scss */
+  /* line 176, ../sass/_media.scss */
   .about_block_item_corporate {
     width: 100%;
   }
 
-  /* line 176, ../sass/_media.scss */
+  /* line 179, ../sass/_media.scss */
   .footer_wrap .footer_block_copyrigt span {
     padding-right: 68px;
   }
