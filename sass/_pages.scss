@@ -164,8 +164,59 @@ $color_text_footer: #ffffff;
                             opacity: 0.6;
                         }
                     }
-                    .mobil_dropdown {
+                    .mobile_dropdown {
                         display: none;
+                        padding-left: 0px;
+                        position: relative;
+                        label{
+                            width: 100%;
+                            position: relative;
+                            span{
+                                padding: 0 15px;
+                                position: relative;
+                                cursor: pointer;
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: calc(50% - 5px);
+                                    transform: translateX(-50%);
+                                    width: 10px;
+                                    height: 14px;
+                                    background-image: url(../img/map_point.svg);
+                                }
+                                &:after{
+                                    content: "";
+                                    position: absolute;
+                                    right: 0;
+                                    top: calc(50% - 5px);
+                                    transform: translateX(-50%);
+                                    width: 10px;
+                                    height: 14px;
+                                    background-image: url(../img/map_point.svg);
+                                }
+                            }
+                            input{
+                                display: none;
+                                &:checked{
+                                    & ~ div{
+                                        max-height: 100px;
+                                    }
+                                }
+                            }
+                            P{}
+                            div{
+                                transition: all linear 0.4s;
+                                max-height: 0px;
+                                overflow: hidden;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                background-color: #ffffff;
+                                padding: 5px 10px;
+                            }
+
+                        }
                        
                     }
                 }

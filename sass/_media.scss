@@ -130,7 +130,10 @@
         display: none;
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list li {
-        padding-left: 38px;
+        position: relative;
+        &:first-child{
+            padding-left: 38px;
+        }
         &:first-child:before {
             content: "";
             background-image: url(../img/header_mail.svg);
@@ -140,6 +143,10 @@
             left: 0;
             top: 7px;
         }
+        .mobile_dropdown{
+          display: block;
+        }
+        
         
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list .mobile_dropdown {
@@ -196,7 +203,8 @@
         height: 40%;
     }
     .service_block_banner_img {
-        height: 100%;
+        height: auto;
+        width: 100%;
         background-size: contain;
     }
     .about_block_item_advantages .advantages_list {
