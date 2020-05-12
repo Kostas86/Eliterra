@@ -19,6 +19,40 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         variableWidth: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 574,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+
+
+        ]
 
     });
     var $adressPoint = $('[data-js-map]');
@@ -83,10 +117,10 @@ $(document).ready(function () {
     var $windowHeight = $(window).height();
     var $fixLocation = (($location + $height) - $windowHeight);
     $(document).scroll(function () {
-        if ($(document).scrollTop() > $fixLocation){
-$service.addClass('active');
+        if ($(document).scrollTop() > $fixLocation) {
+            $service.addClass('active');
         } else {
-            $service.removeClass('active'); 
+            $service.removeClass('active');
         }
     });
 });

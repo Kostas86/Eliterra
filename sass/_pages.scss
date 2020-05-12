@@ -171,6 +171,7 @@ $color_text_footer: #ffffff;
                         label{
                             width: 100%;
                             position: relative;
+                            margin-bottom: 0px;
                             span{
                                 padding: 0 15px;
                                 position: relative;
@@ -190,7 +191,7 @@ $color_text_footer: #ffffff;
                                     position: absolute;
                                     right: 0;
                                     top: calc(50% - 5px);
-                                    transform: translateX(-50%);
+                                    transform: translateX(50%);
                                     width: 10px;
                                     height: 14px;
                                     background-image: url(../img/map_point.svg);
@@ -204,7 +205,9 @@ $color_text_footer: #ffffff;
                                     }
                                 }
                             }
-                            P{}
+                            P{
+                                margin-bottom: 10px;
+                            }
                             div{
                                 transition: all linear 0.4s;
                                 max-height: 0px;
@@ -214,6 +217,7 @@ $color_text_footer: #ffffff;
                                 left: 0;
                                 background-color: #ffffff;
                                 padding: 5px 10px;
+                                
                             }
 
                         }

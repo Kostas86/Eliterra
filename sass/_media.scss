@@ -126,13 +126,14 @@
         flex-direction: column;
         padding-left: 0px;
     }
-    .header_contacts_item_links_mailgroup .header_contacts_mail-list:before{
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list:before {
         display: none;
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list li {
         position: relative;
-        &:first-child{
+        &:first-child {
             padding-left: 38px;
+            margin-bottom: 10px;
         }
         &:first-child:before {
             content: "";
@@ -143,11 +144,9 @@
             left: 0;
             top: 7px;
         }
-        .mobile_dropdown{
-          display: block;
+        .mobile_dropdown {
+            display: block;
         }
-        
-        
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list .mobile_dropdown {
         display: block;
@@ -179,6 +178,24 @@
         padding-top: 0px;
         padding-bottom: 20px;
     }
+    .slider .slider_item.slick-active .slider_item_card_effect .cross {
+        &_3 {
+            width: 15px;
+            height: 15px;
+        }
+        &_4 {
+            width: 15px;
+            height: 15px;
+        }
+        &_5 {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .slider .slider_item.slick-active .slider_item_card_effect_ring{
+        width: 315px;
+        height: 315px; 
+    }
     .catalog_title {
         font-size: 24px;
         line-height: 33px;
@@ -191,13 +208,24 @@
         padding-right: 74px;
         padding-top: 76px;
     }
+    .service{
+        margin-bottom: 80px;
+    }
     .service_block {
         flex-direction: column-reverse;
         height: 750px;
+        justify-content: flex-end;
     }
     .service_block_info {
         width: 100%;
         padding-right: 0;
+    }
+    .service_block_info h2 {
+        padding: 85px 0px 20px 0px;
+    }
+    .service_block_info p {
+        margin-bottom: 28px;
+        padding: 0 210px 0 0;
     }
     .service_block_banner {
         height: 40%;
@@ -206,6 +234,10 @@
         height: auto;
         width: 100%;
         background-size: contain;
+    }
+    .service.active .service_block_banner_effect_ring{
+        width: 415x;
+        height: 415px;
     }
     .about_block_item_advantages .advantages_list {
         padding-right: 30px;
@@ -219,6 +251,25 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .catalog .catalog_menu_item_info {
+        padding-right: 6px;
+        padding-top: 46px;
+    }
+    .catalog .catalog_menu_item_effect .cross_4{
+        width: 15px;
+        height: 15px;
+    }
+    .service.active .service_block_banner_effect_ring{
+        width: 215px;
+        height: 215px;
+    }
+    .service_block_info h2 {
+        padding: 0px 0px 20px 0px;
+    }
+    .service_block_info p {
+        margin-bottom: 28px;
+        padding: 0px 138px 0 0;
+    }
 }
 @media screen and (max-width: 574px) {
 }
