@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     });
     $('.partners_slider').slick({
-        arrows: false,
+        arrows: true,
         dots: true,
         centerMode: false,
         variableWidth: true,

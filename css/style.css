@@ -1856,68 +1856,128 @@ button, button:active, button:hover, button:visited {
   }
 
   /* line 257, ../sass/_media.scss */
-  .navigation_row .nav li:first-child {
-    display: none;
+  .navigation_row .nav li {
+    margin-right: 0px;
   }
 
   /* line 260, ../sass/_media.scss */
+  .navigation_row .nav li a {
+    padding: 0 9px;
+  }
+
+  /* line 263, ../sass/_media.scss */
   .header_contacts {
     padding: 25px 0 25px 0;
     flex-direction: column;
   }
 
-  /* line 264, ../sass/_media.scss */
+  /* line 267, ../sass/_media.scss */
   .header_contacts_item {
     margin-bottom: 20px;
   }
 
-  /* line 267, ../sass/_media.scss */
+  /* line 270, ../sass/_media.scss */
   .header_contacts_item_links_telgroup .header_contacts_tel-list {
     margin-bottom: 10px;
   }
 
-  /* line 270, ../sass/_media.scss */
+  /* line 273, ../sass/_media.scss */
   .header_contacts_item_links_mailgroup {
     margin-left: 60px;
   }
 
-  /* line 273, ../sass/_media.scss */
+  /* line 276, ../sass/_media.scss */
   .header_contacts_basket {
     align-self: center;
   }
 
-  /* line 276, ../sass/_media.scss */
+  /* line 279, ../sass/_media.scss */
+  .slider .slider_item_card {
+    width: 540px;
+  }
+
+  /* line 282, ../sass/_media.scss */
+  .slider .slider_item_card_info {
+    padding-right: 36px;
+  }
+
+  /* line 285, ../sass/_media.scss */
+  .slider .slick-arrow.slick-next {
+    transform: translateX(275px);
+    right: 50%;
+    display: none;
+  }
+
+  /* line 290, ../sass/_media.scss */
+  .slider .slick-arrow.slick-prev {
+    transform: translateX(-275px);
+    left: 50%;
+    display: none;
+  }
+
+  /* line 295, ../sass/_media.scss */
   .catalog .catalog_menu_item_info {
     padding-right: 6px;
     padding-top: 46px;
   }
 
-  /* line 280, ../sass/_media.scss */
+  /* line 299, ../sass/_media.scss */
   .catalog .catalog_menu_item_effect .cross_4 {
     width: 15px;
     height: 15px;
   }
 
-  /* line 284, ../sass/_media.scss */
+  /* line 303, ../sass/_media.scss */
+  .service_block {
+    padding-top: 20px;
+  }
+
+  /* line 306, ../sass/_media.scss */
   .service.active .service_block_banner_effect_ring {
     width: 215px;
     height: 215px;
   }
 
-  /* line 288, ../sass/_media.scss */
+  /* line 310, ../sass/_media.scss */
   .service_block_info h2 {
     padding: 0px 0px 20px 0px;
   }
 
-  /* line 291, ../sass/_media.scss */
+  /* line 313, ../sass/_media.scss */
   .service_block_info p {
     margin-bottom: 28px;
     padding: 0px 138px 0 0;
   }
 
-  /* line 295, ../sass/_media.scss */
+  /* line 317, ../sass/_media.scss */
   .footer_wrap .footer_block_copyrigt span {
     padding-right: 47px;
+  }
+
+  /* line 320, ../sass/_media.scss */
+  .footer_wrap .footer_block .home {
+    left: calc(100% - 70px);
+  }
+
+  /* line 323, ../sass/_media.scss */
+  .footer_wrap .footer_block {
+    flex-direction: column;
+    padding: 15px 0 15px 0;
+  }
+
+  /* line 327, ../sass/_media.scss */
+  .footer_wrap .footer_block_logo {
+    margin: 0px 0px 15px 0px;
+  }
+
+  /* line 330, ../sass/_media.scss */
+  .footer_wrap .footer_block_copyrigt span {
+    padding: 0 15px;
+  }
+
+  /* line 333, ../sass/_media.scss */
+  .footer_wrap .footer_block_copyrigt span {
+    font-size: 12px;
   }
 }
 /* line 7, ../sass/style.scss */
