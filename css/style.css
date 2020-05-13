@@ -1851,32 +1851,73 @@ button, button:active, button:hover, button:visited {
 }
 @media screen and (max-width: 767px) {
   /* line 254, ../sass/_media.scss */
+  .navigation_row {
+    flex-direction: column;
+  }
+
+  /* line 257, ../sass/_media.scss */
+  .navigation_row .nav li:first-child {
+    display: none;
+  }
+
+  /* line 260, ../sass/_media.scss */
+  .header_contacts {
+    padding: 25px 0 25px 0;
+    flex-direction: column;
+  }
+
+  /* line 264, ../sass/_media.scss */
+  .header_contacts_item {
+    margin-bottom: 20px;
+  }
+
+  /* line 267, ../sass/_media.scss */
+  .header_contacts_item_links_telgroup .header_contacts_tel-list {
+    margin-bottom: 10px;
+  }
+
+  /* line 270, ../sass/_media.scss */
+  .header_contacts_item_links_mailgroup {
+    margin-left: 60px;
+  }
+
+  /* line 273, ../sass/_media.scss */
+  .header_contacts_basket {
+    align-self: center;
+  }
+
+  /* line 276, ../sass/_media.scss */
   .catalog .catalog_menu_item_info {
     padding-right: 6px;
     padding-top: 46px;
   }
 
-  /* line 258, ../sass/_media.scss */
+  /* line 280, ../sass/_media.scss */
   .catalog .catalog_menu_item_effect .cross_4 {
     width: 15px;
     height: 15px;
   }
 
-  /* line 262, ../sass/_media.scss */
+  /* line 284, ../sass/_media.scss */
   .service.active .service_block_banner_effect_ring {
     width: 215px;
     height: 215px;
   }
 
-  /* line 266, ../sass/_media.scss */
+  /* line 288, ../sass/_media.scss */
   .service_block_info h2 {
     padding: 0px 0px 20px 0px;
   }
 
-  /* line 269, ../sass/_media.scss */
+  /* line 291, ../sass/_media.scss */
   .service_block_info p {
     margin-bottom: 28px;
     padding: 0px 138px 0 0;
+  }
+
+  /* line 295, ../sass/_media.scss */
+  .footer_wrap .footer_block_copyrigt span {
+    padding-right: 47px;
   }
 }
 /* line 7, ../sass/style.scss */
