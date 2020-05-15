@@ -30,6 +30,15 @@ $color_text_footer: #ffffff;
     }
 }
 // ===============Навигация (Верхняя часть)===============
+.navigation_burger{
+    display: none;
+}
+.burger_menu{
+    display: none;
+}
+.mobil_basket{
+    display: none;
+}
 .navigation {
     background-color: $color_1;
     &_row {
@@ -38,12 +47,6 @@ $color_text_footer: #ffffff;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
-        .navigation_burger{
-            display: none;
-        }
-        .burger_menu{
-            display: none;
-        }
         .nav li {
             font-size: 16px;
             margin-right: 30px;
@@ -189,16 +192,18 @@ $color_text_footer: #ffffff;
                                     top: calc(50% - 5px);
                                     width: 10px;
                                     height: 14px;
-                                    background-image: url(../img/map_point.svg);
+                                    background: url(../img/map_point.svg) no-repeat center;
+                                    background-size: contain;
                                 }
                                 &:after{
                                     content: "";
                                     position: absolute;
                                     right: 0;
-                                    top: calc(50% - 5px);
-                                    width: 10px;
-                                    height: 14px;
-                                    background-image: url(../img/map_point.svg);
+                                    top: calc(50% - 1px);
+                                    width: 9px;
+                                    height: 5px;
+                                    background: url(../img/drop_down.svg) no-repeat center;
+                                    background-size: contain;
                                 }
                             }
                             input{
@@ -206,6 +211,7 @@ $color_text_footer: #ffffff;
                                 &:checked{
                                     & ~ div{
                                         max-height: 100px;
+                                        padding: 5px 10px;
                                     }
                                 }
                             }
@@ -215,12 +221,19 @@ $color_text_footer: #ffffff;
                             div{
                                 transition: all linear 0.4s;
                                 max-height: 0px;
+                                width: 100%;
                                 overflow: hidden;
                                 position: absolute;
-                                top: 100%;
+                                top: calc(100% + 5px);
                                 left: 0;
-                                background-color: #ffffff;
-                                padding: 5px 10px;
+                                background-color: #ebf3f8;
+                                padding: 0 10px;
+                                z-index: 1;
+                                box-shadow: 4px 4px 10px rgba(18, 32, 52, 0.3);
+                                border-radius: 0 0 5px 5px;
+                                text-align: center;
+
+
                                 
                             }
 
@@ -1298,7 +1311,7 @@ $color_text_footer: #ffffff;
     justify-content: center;
     align-items: center;
     .footer_block {
-        height: 128px;
+        height: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;

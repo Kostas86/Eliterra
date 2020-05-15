@@ -127,7 +127,7 @@
         padding-left: 0px;
         margin-right: 0px;
     }
-    .header_contacts_basket{
+    .header_contacts_basket {
         padding-left: 15px;
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list:before {
@@ -196,9 +196,9 @@
             height: 15px;
         }
     }
-    .slider .slider_item.slick-active .slider_item_card_effect_ring{
+    .slider .slider_item.slick-active .slider_item_card_effect_ring {
         width: 315px;
-        height: 315px; 
+        height: 315px;
     }
     .catalog_title {
         font-size: 24px;
@@ -212,12 +212,14 @@
         padding-right: 74px;
         padding-top: 76px;
     }
-    .service{
+    .service {
         margin-bottom: 80px;
+        padding-top: 35px;
     }
     .service_block {
         flex-direction: column-reverse;
-        height: 750px;
+        height: auto;
+        padding-bottom: 30px;
         justify-content: flex-end;
     }
     .service_block_info {
@@ -225,21 +227,23 @@
         padding-right: 0;
     }
     .service_block_info h2 {
-        padding: 85px 0px 20px 0px;
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
     .service_block_info p {
         margin-bottom: 28px;
-        padding: 0 210px 0 0;
+        padding: 0;
     }
     .service_block_banner {
-        height: 40%;
+        height: auto;
     }
     .service_block_banner_img {
         height: auto;
         width: 100%;
         background-size: contain;
     }
-    .service.active .service_block_banner_effect_ring{
+    .service.active .service_block_banner_effect_ring {
         width: 415x;
         height: 415px;
     }
@@ -255,44 +259,44 @@
     }
 }
 @media screen and (max-width: 767px) {
-    .navigation_row{
+    .navigation_row {
         flex-direction: column;
     }
-    .navigation_row .nav li{
+    .navigation_row .nav li {
         margin-right: 0px;
     }
-    .navigation_row .nav li a{
+    .navigation_row .nav li a {
         padding: 0 9px;
     }
     .header_contacts {
         padding: 25px 0 25px 0;
     }
-    .header_contacts_item{
-        img{
+    .header_contacts_item {
+        img {
             width: 212px;
             height: 54px;
         }
     }
-    .header_contacts_item_links_telgroup a{
+    .header_contacts_item_links_telgroup a {
         font-size: 14px;
     }
     .header_contacts_item_links_telgroup a span {
         font-weight: bold;
         font-size: 14px;
     }
-    .header_contacts_item_links_mailgroup .header_contacts_mail-list a{
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list a {
         font-size: 16px;
     }
-    .header_contacts_item_links_telgroup .header_contacts_tel-list{
+    .header_contacts_item_links_telgroup .header_contacts_tel-list {
         margin-bottom: 10px;
     }
     .header_contacts_item_links_mailgroup {
         margin-left: 10px;
     }
-    .header_contacts_basket{
-        align-self: center;
+    .header_contacts_basket {
+        display: none;
     }
-    .slider .slider_item_card{
+    .slider .slider_item_card {
         width: 540px;
     }
     .slider .slider_item_card_info {
@@ -312,14 +316,14 @@
         padding-right: 6px;
         padding-top: 46px;
     }
-    .catalog .catalog_menu_item_effect .cross_4{
+    .catalog .catalog_menu_item_effect .cross_4 {
         width: 15px;
         height: 15px;
     }
-    .service_block{
+    .service_block {
         padding-top: 20px;
     }
-    .service.active .service_block_banner_effect_ring{
+    .service.active .service_block_banner_effect_ring {
         width: 215px;
         height: 215px;
     }
@@ -333,21 +337,98 @@
     .footer_wrap .footer_block_copyrigt span {
         padding-right: 47px;
     }
-    .footer_wrap .footer_block .home{
+    .footer_wrap .footer_block .home {
         left: calc(100% - 70px);
     }
-    .footer_wrap .footer_block{
+    .footer_wrap .footer_block {
         flex-direction: column;
         padding: 15px 0 15px 0;
     }
     .footer_wrap .footer_block_logo {
         margin: 0px 0px 15px 0px;
     }
-    .footer_wrap .footer_block_copyrigt span{
-        padding: 0 15px;
-    }
-    .footer_wrap .footer_block_copyrigt span{
+    .footer_wrap .footer_block_copyrigt span {
+        padding: 0 115px;
         font-size: 12px;
+        display: block;
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+    .navigation_burger {
+        display: block;
+        &_trigger {
+            background: url(../img/burger.svg) no-repeat center;
+            background-size: contain;
+            width: 20px;
+            height: 14px;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+    .burger_menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background-color: #ebf3f8;
+        z-index: 1;
+        padding-left: 30px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 4px 4px 4px rgba(18, 32, 52, 0.3);
+        &_list {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            li {
+                width: 50%;
+                height: 30px;
+                color: $color_text_hed_nav;
+                a {
+                    line-height: 30px;
+                    text-decoration: none;
+                    padding-bottom: 3px;
+                    color: $color_text_hed_nav;
+                    &:hover {
+                        font-weight: 600;
+                        text-decoration: none;
+                        border-bottom: 3px solid $color_bt;
+                        color: $color_text_hed_nav;
+                    }
+                }
+            }
+        }
+    }
+    .mobil_basket {
+        display: block;
+        .header_contacts_basket_companents {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            .counter {
+                margin-bottom: 0;
+                margin-right: 5px;
+            }
+        }
+    }
+    .navigation_row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
     }
 }
 @media screen and (max-width: 574px) {
