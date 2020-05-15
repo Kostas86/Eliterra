@@ -38,6 +38,12 @@ $color_text_footer: #ffffff;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
+        .navigation_burger{
+            display: none;
+        }
+        .burger_menu{
+            display: none;
+        }
         .nav li {
             font-size: 16px;
             margin-right: 30px;
