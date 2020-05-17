@@ -277,12 +277,11 @@
             height: 54px;
         }
     }
-    .header_contacts_item_links_telgroup a {
-        font-size: 14px;
+    .header_contacts_item_links_telgroup{
+        display: none;
     }
-    .header_contacts_item_links_telgroup a span {
-        font-weight: bold;
-        font-size: 14px;
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list li:first-child{
+        display: none;
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list a {
         font-size: 16px;
@@ -372,44 +371,44 @@
             }
         }
     }
-    .burger_menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 100%;
-        background-color: #ebf3f8;
-        z-index: 1;
-        padding-left: 30px;
-        border-radius: 0 0 15px 15px;
-        box-shadow: 4px 4px 4px rgba(18, 32, 52, 0.3);
-        &_list {
-            padding: 0;
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            li {
-                width: 50%;
-                height: 30px;
-                color: $color_text_hed_nav;
-                a {
-                    line-height: 30px;
-                    text-decoration: none;
-                    padding-bottom: 3px;
-                    color: $color_text_hed_nav;
-                    &:hover {
-                        font-weight: 600;
-                        text-decoration: none;
-                        border-bottom: 3px solid $color_bt;
-                        color: $color_text_hed_nav;
-                    }
-                }
-            }
-        }
-    }
+    // .burger_menu {
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     left: 0;
+    //     top: 100%;
+    //     background-color: #ebf3f8;
+    //     z-index: 1;
+    //     padding-left: 30px;
+    //     border-radius: 0 0 15px 15px;
+    //     box-shadow: 4px 4px 10px rgba(18, 32, 52, 0.3);
+    //     &_list {
+    //         padding: 0;
+    //         list-style-type: none;
+    //         display: flex;
+    //         flex-direction: row;
+    //         flex-wrap: wrap;
+    //         justify-content: flex-start;
+    //         align-items: flex-start;
+    //         li {
+    //             width: 50%;
+    //             height: 30px;
+    //             color: $color_text_hed_nav;
+    //             a {
+    //                 line-height: 30px;
+    //                 text-decoration: none;
+    //                 padding-bottom: 3px;
+    //                 color: $color_text_hed_nav;
+    //                 &:hover {
+    //                     font-weight: 600;
+    //                     text-decoration: none;
+    //                     border-bottom: 3px solid $color_bt;
+    //                     color: $color_text_hed_nav;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .mobil_basket {
         display: block;
         .header_contacts_basket_companents {
@@ -429,6 +428,10 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+    }
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list .mobile_dropdown_tel{
+        display: block;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 574px) {
