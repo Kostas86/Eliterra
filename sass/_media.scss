@@ -277,10 +277,10 @@
             height: 54px;
         }
     }
-    .header_contacts_item_links_telgroup{
+    .header_contacts_item_links_telgroup {
         display: none;
     }
-    .header_contacts_item_links_mailgroup .header_contacts_mail-list li:first-child{
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list li:first-child {
         display: none;
     }
     .header_contacts_item_links_mailgroup .header_contacts_mail-list a {
@@ -371,44 +371,44 @@
             }
         }
     }
-    // .burger_menu {
-    //     display: block;
-    //     position: absolute;
-    //     width: 100%;
-    //     left: 0;
-    //     top: 100%;
-    //     background-color: #ebf3f8;
-    //     z-index: 1;
-    //     padding-left: 30px;
-    //     border-radius: 0 0 15px 15px;
-    //     box-shadow: 4px 4px 10px rgba(18, 32, 52, 0.3);
-    //     &_list {
-    //         padding: 0;
-    //         list-style-type: none;
-    //         display: flex;
-    //         flex-direction: row;
-    //         flex-wrap: wrap;
-    //         justify-content: flex-start;
-    //         align-items: flex-start;
-    //         li {
-    //             width: 50%;
-    //             height: 30px;
-    //             color: $color_text_hed_nav;
-    //             a {
-    //                 line-height: 30px;
-    //                 text-decoration: none;
-    //                 padding-bottom: 3px;
-    //                 color: $color_text_hed_nav;
-    //                 &:hover {
-    //                     font-weight: 600;
-    //                     text-decoration: none;
-    //                     border-bottom: 3px solid $color_bt;
-    //                     color: $color_text_hed_nav;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    .burger_menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background-color: #ebf3f8;
+        z-index: 2;
+        padding-left: 30px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 4px 4px 10px rgba(18, 32, 52, 0.3);
+        &_list {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            li {
+                width: 50%;
+                height: 30px;
+                color: $color_text_hed_nav;
+                a {
+                    line-height: 30px;
+                    text-decoration: none;
+                    padding-bottom: 3px;
+                    color: $color_text_hed_nav;
+                    &:hover {
+                        font-weight: 600;
+                        text-decoration: none;
+                        border-bottom: 3px solid $color_bt;
+                        color: $color_text_hed_nav;
+                    }
+                }
+            }
+        }
+    }
     .mobil_basket {
         display: block;
         .header_contacts_basket_companents {
@@ -429,12 +429,91 @@
         align-items: center;
         position: relative;
     }
-    .header_contacts_item_links_mailgroup .header_contacts_mail-list .mobile_dropdown_tel{
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list .mobile_dropdown_tel {
         display: block;
         margin-bottom: 10px;
     }
+    .catalog {
+        margin-bottom: 80px;
+    }
 }
 @media screen and (max-width: 574px) {
+    .burger_menu {
+        padding-right: 30px;
+    }
+    .burger_menu_list {
+        margin: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .burger_menu_list li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .burger_menu_tel-list{
+        padding: 0px;
+    }
+    .burger_menu_tel-list li{
+        list-style: none;
+    }
+    .burger_menu_tel-list li a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        padding-left: 28px;
+        &::before {
+            content: "";
+            background-image: url(../img/header_phone.svg);
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 3px;
+        }
+    }
+    .header_contacts_item_links_mailgroup .header_contacts_mail-list {
+        display: none;
+    }
+    .header_contacts {
+        justify-content: center;
+        padding: 40px 0 0px 0;
+    }
+    .slider {
+        display: none;
+    }
+    .catalog_title {
+        display: none;
+    }
+    .catalog .catalog_menu_item {
+        width: calc(100% / 1 - 30px);
+        height: 203px;
+    }
+    .service_block_info p {
+        padding-right: 0;
+    }
+    .partners {
+        display: none;
+    }
+    .about_block_item_corporate_tel-list {
+        flex-wrap: wrap;
+    }
+    .about_block_item_corporate_mail-list {
+        flex-wrap: wrap;
+    }
+    .service {
+        margin-bottom: 0;
+    }
+    .about {
+        margin-top: 0;
+    }
+    .footer_wrap .footer_block_copyrigt span {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media screen and (max-width: 360px) {
 }
