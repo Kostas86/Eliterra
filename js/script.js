@@ -123,6 +123,13 @@ $(document).ready(function () {
             $service.removeClass('active');
         }
     });
+    var $burgerTrigger = $('.navigation_burger_trigger');
+    var $burgerContent = $('.burger_menu');
+    $burgerTrigger.on('click', function () {
+        $burgerTrigger.toggleClass('active');
+        $burgerContent.toggleClass('active');
+        return false;
+    });
 });
 
 

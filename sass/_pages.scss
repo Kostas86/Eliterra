@@ -30,13 +30,41 @@ $color_text_footer: #ffffff;
     }
 }
 // ===============Навигация (Верхняя часть)===============
-.navigation_burger{
+.navigation_burger {
+    display: none;
+    &_trigger {
+        background: url(../img/burger.svg) no-repeat center;
+        background-size: contain;
+        width: 20px;
+        height: 14px;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+        &.active {
+            background: url(../img/burger_cross.svg) no-repeat center;
+            background-size: contain;
+        }
+    }
+}
+.burger_menu {
     display: none;
 }
-.burger_menu{
+.burger_menu_tel-list{
     display: none;
 }
-.mobil_basket{
+.burger_menu_mail-list{
+    display: none;
+}
+.burger_menu_adress-list{
+    display: none;
+}
+.mobile_subtitle{
+    display: none;
+}
+.mobil_basket {
     display: none;
 }
 .navigation {
@@ -177,16 +205,16 @@ $color_text_footer: #ffffff;
                         display: none;
                         padding-left: 0px;
                         position: relative;
-                        label{
+                        label {
                             width: 100%;
                             position: relative;
                             margin-bottom: 0px;
-                            span{
+                            span {
                                 padding-right: 15px;
                                 padding-left: 26px;
                                 position: relative;
                                 cursor: pointer;
-                                &::before{
+                                &::before {
                                     content: "";
                                     position: absolute;
                                     left: 0;
@@ -196,7 +224,7 @@ $color_text_footer: #ffffff;
                                     background: url(../img/map_point.svg) no-repeat center;
                                     background-size: contain;
                                 }
-                                &:after{
+                                &:after {
                                     content: "";
                                     position: absolute;
                                     right: 0;
@@ -207,19 +235,19 @@ $color_text_footer: #ffffff;
                                     background-size: contain;
                                 }
                             }
-                            input{
+                            input {
                                 display: none;
-                                &:checked{
-                                    & ~ div{
+                                &:checked {
+                                    & ~ div {
                                         max-height: 100px;
                                         padding: 5px 10px;
                                     }
                                 }
                             }
-                            P{
+                            P {
                                 margin-bottom: 10px;
                             }
-                            div{
+                            div {
                                 transition: all linear 0.4s;
                                 max-height: 0px;
                                 width: 100%;
@@ -232,25 +260,25 @@ $color_text_footer: #ffffff;
                                 z-index: 1;
                                 box-shadow: 4px 4px 10px rgba(18, 32, 52, 0.3);
                                 border-radius: 0 0 5px 5px;
-                                text-align: center;    
+                                text-align: center;
                             }
-                        }   
+                        }
                     }
                     .mobile_dropdown_tel {
                         display: none;
                         padding-left: 0px;
                         position: relative;
-                        label{
+                        label {
                             width: 100%;
                             position: relative;
                             margin-bottom: 0px;
-                            span{
+                            span {
                                 padding-right: 17px;
                                 padding-left: 28px;
                                 position: relative;
                                 cursor: pointer;
                                 font-size: 17px;
-                                &::before{
+                                &::before {
                                     content: "";
                                     position: absolute;
                                     left: 0;
@@ -260,7 +288,7 @@ $color_text_footer: #ffffff;
                                     background: url(../img/header_phone.svg) no-repeat center;
                                     background-size: contain;
                                 }
-                                &:after{
+                                &:after {
                                     content: "";
                                     position: absolute;
                                     right: 0;
@@ -271,19 +299,19 @@ $color_text_footer: #ffffff;
                                     background-size: contain;
                                 }
                             }
-                            input{
+                            input {
                                 display: none;
-                                &:checked{
-                                    & ~ div{
+                                &:checked {
+                                    & ~ div {
                                         max-height: 100px;
                                         padding: 5px 10px;
                                     }
                                 }
                             }
-                            P{
+                            P {
                                 margin-bottom: 10px;
                             }
-                            div{
+                            div {
                                 transition: all linear 0.4s;
                                 max-height: 0px;
                                 width: 100%;
@@ -296,9 +324,9 @@ $color_text_footer: #ffffff;
                                 z-index: 1;
                                 box-shadow: 4px 4px 10px rgba(18, 32, 52, 0.3);
                                 border-radius: 0 0 5px 5px;
-                                text-align: center;    
+                                text-align: center;
                             }
-                        }   
+                        }
                     }
                 }
             }
