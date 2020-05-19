@@ -30,6 +30,9 @@ $color_text_footer: #ffffff;
     }
 }
 // ===============Навигация (Верхняя часть)===============
+.mobil_logo{
+    display: none;
+}
 .navigation_burger {
     display: none;
     &_trigger {
