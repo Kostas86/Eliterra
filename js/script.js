@@ -72,7 +72,9 @@ $(document).ready(function () {
             .remove("searchControl")
             .remove("trafficControl")
             .remove("geolocationControl")
-            .remove("routeEditor");
+            .remove("routeEditor")
+            .remove("typeSelector")
+            .remove("fullscreenControl");
         myMap.behaviors.disable([
             // 'drag',
             'scrollZoom'

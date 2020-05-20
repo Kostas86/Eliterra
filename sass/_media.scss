@@ -38,10 +38,11 @@
         margin: 35px 10px;
     }
     .about {
-        width: 100%;
-        background-image: url(../img/about_img_1024.jpg);
+        background-image: url(../img/about_bg.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 1350px auto;
+        background-position: right -320px top 0;
+        background-color: #F8FBFD;
     }
     .about_block_item {
         display: flex;
@@ -586,6 +587,7 @@
     }
     .about_block_item_retail h3{
         font-size: 20px;
+        line-height: 20px;
     }
     .about_block_item_retail a{
         font-size: 16px;
@@ -595,9 +597,11 @@
     }
     .about_block_item_corporate h3{
         font-size: 20px;
+        line-height: 25px;
     }
     .about_block_item_corporate a{
         font-size: 16px;
+        margin-bottom: 15px;
     }
     .about_block_item_corporate_tel-list span{
         font-size: 20px;
@@ -609,6 +613,7 @@
         font-size: 30px;
         padding: 0;
         margin-top: 20px;
+        line-height: 30px;
     }
     .about {
         margin-top: 0;
@@ -621,8 +626,8 @@
         position: fixed;
         width: 100%;
         height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         z-index: 50;
         top: 0;
         left: 0;
@@ -631,7 +636,7 @@
         display: block;
     }
     .catalog{
-        margin-top:100px ;
+        margin-top:80px ;
     }
 }
 @media screen and (max-width: 360px) {
